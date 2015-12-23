@@ -15,6 +15,18 @@
 		E2D3EF591C2A9A05003D8A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3EF571C2A9A05003D8A38 /* LaunchScreen.storyboard */; };
 		E2D3EF641C2A9A06003D8A38 /* PickupHoopsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EF631C2A9A06003D8A38 /* PickupHoopsTests.swift */; };
 		E2D3EF6F1C2A9A06003D8A38 /* PickupHoopsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EF6E1C2A9A06003D8A38 /* PickupHoopsUITests.swift */; };
+		E2D3EF7D1C2A9DDC003D8A38 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF7C1C2A9DDC003D8A38 /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		E2D3EF7F1C2A9DF7003D8A38 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF7E1C2A9DF7003D8A38 /* SystemConfiguration.framework */; };
+		E2D3EF811C2A9E4C003D8A38 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF801C2A9E4C003D8A38 /* AudioToolbox.framework */; };
+		E2D3EF831C2A9E55003D8A38 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF821C2A9E55003D8A38 /* CFNetwork.framework */; };
+		E2D3EF851C2A9E5C003D8A38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF841C2A9E5C003D8A38 /* CoreGraphics.framework */; };
+		E2D3EF871C2A9E63003D8A38 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF861C2A9E63003D8A38 /* CoreLocation.framework */; };
+		E2D3EF8B1C2A9E73003D8A38 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF8A1C2A9E73003D8A38 /* QuartzCore.framework */; };
+		E2D3EF8D1C2A9E80003D8A38 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF8C1C2A9E80003D8A38 /* Security.framework */; };
+		E2D3EF8F1C2A9E89003D8A38 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF8E1C2A9E89003D8A38 /* StoreKit.framework */; };
+		E2D3EF911C2A9F27003D8A38 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF901C2A9F27003D8A38 /* libz.tbd */; };
+		E2D3EF931C2A9F2F003D8A38 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF921C2A9F2F003D8A38 /* libsqlite3.tbd */; };
+		E2D3EFA01C2AA6EB003D8A38 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF9F1C2AA6EB003D8A38 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +61,20 @@
 		E2D3EF6A1C2A9A06003D8A38 /* PickupHoopsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PickupHoopsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D3EF6E1C2A9A06003D8A38 /* PickupHoopsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupHoopsUITests.swift; sourceTree = "<group>"; };
 		E2D3EF701C2A9A06003D8A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2D3EF7C1C2A9DDC003D8A38 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		E2D3EF7E1C2A9DF7003D8A38 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		E2D3EF801C2A9E4C003D8A38 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E2D3EF821C2A9E55003D8A38 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E2D3EF841C2A9E5C003D8A38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E2D3EF861C2A9E63003D8A38 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E2D3EF881C2A9E6B003D8A38 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E2D3EF8A1C2A9E73003D8A38 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E2D3EF8C1C2A9E80003D8A38 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E2D3EF8E1C2A9E89003D8A38 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		E2D3EF901C2A9F27003D8A38 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E2D3EF921C2A9F2F003D8A38 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E2D3EF9C1C2AA542003D8A38 /* PickupHoops-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PickupHoops-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2D3EF9F1C2AA6EB003D8A38 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D3EF931C2A9F2F003D8A38 /* libsqlite3.tbd in Frameworks */,
+				E2D3EF911C2A9F27003D8A38 /* libz.tbd in Frameworks */,
+				E2D3EF8F1C2A9E89003D8A38 /* StoreKit.framework in Frameworks */,
+				E2D3EFA01C2AA6EB003D8A38 /* Bolts.framework in Frameworks */,
+				E2D3EF8D1C2A9E80003D8A38 /* Security.framework in Frameworks */,
+				E2D3EF8B1C2A9E73003D8A38 /* QuartzCore.framework in Frameworks */,
+				E2D3EF871C2A9E63003D8A38 /* CoreLocation.framework in Frameworks */,
+				E2D3EF851C2A9E5C003D8A38 /* CoreGraphics.framework in Frameworks */,
+				E2D3EF831C2A9E55003D8A38 /* CFNetwork.framework in Frameworks */,
+				E2D3EF811C2A9E4C003D8A38 /* AudioToolbox.framework in Frameworks */,
+				E2D3EF7F1C2A9DF7003D8A38 /* SystemConfiguration.framework in Frameworks */,
+				E2D3EF7D1C2A9DDC003D8A38 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +117,7 @@
 		E2D3EF401C2A9A05003D8A38 = {
 			isa = PBXGroup;
 			children = (
+				E2D3EF951C2A9F7A003D8A38 /* Frameworks */,
 				E2D3EF4B1C2A9A05003D8A38 /* PickupHoops */,
 				E2D3EF621C2A9A06003D8A38 /* PickupHoopsTests */,
 				E2D3EF6D1C2A9A06003D8A38 /* PickupHoopsUITests */,
@@ -106,6 +145,7 @@
 				E2D3EF551C2A9A05003D8A38 /* Assets.xcassets */,
 				E2D3EF571C2A9A05003D8A38 /* LaunchScreen.storyboard */,
 				E2D3EF5A1C2A9A05003D8A38 /* Info.plist */,
+				E2D3EF9C1C2AA542003D8A38 /* PickupHoops-Bridging-Header.h */,
 			);
 			path = PickupHoops;
 			sourceTree = "<group>";
@@ -126,6 +166,26 @@
 				E2D3EF701C2A9A06003D8A38 /* Info.plist */,
 			);
 			path = PickupHoopsUITests;
+			sourceTree = "<group>";
+		};
+		E2D3EF951C2A9F7A003D8A38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D3EF9F1C2AA6EB003D8A38 /* Bolts.framework */,
+				E2D3EF921C2A9F2F003D8A38 /* libsqlite3.tbd */,
+				E2D3EF901C2A9F27003D8A38 /* libz.tbd */,
+				E2D3EF8C1C2A9E80003D8A38 /* Security.framework */,
+				E2D3EF8E1C2A9E89003D8A38 /* StoreKit.framework */,
+				E2D3EF8A1C2A9E73003D8A38 /* QuartzCore.framework */,
+				E2D3EF881C2A9E6B003D8A38 /* MobileCoreServices.framework */,
+				E2D3EF861C2A9E63003D8A38 /* CoreLocation.framework */,
+				E2D3EF841C2A9E5C003D8A38 /* CoreGraphics.framework */,
+				E2D3EF821C2A9E55003D8A38 /* CFNetwork.framework */,
+				E2D3EF801C2A9E4C003D8A38 /* AudioToolbox.framework */,
+				E2D3EF7E1C2A9DF7003D8A38 /* SystemConfiguration.framework */,
+				E2D3EF7C1C2A9DDC003D8A38 /* Parse.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +250,7 @@
 		E2D3EF411C2A9A05003D8A38 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Pickup Sports";
 				TargetAttributes = {
@@ -400,10 +461,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PickupHoops/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PickupSports.PickupHoops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PickupHoops/PickupHoops-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -411,10 +479,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PickupHoops/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.PickupSports.PickupHoops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PickupHoops/PickupHoops-Bridging-Header.h";
 			};
 			name = Release;
 		};
