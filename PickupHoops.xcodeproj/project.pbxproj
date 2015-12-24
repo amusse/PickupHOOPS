@@ -28,6 +28,8 @@
 		E2D3EF931C2A9F2F003D8A38 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF921C2A9F2F003D8A38 /* libsqlite3.tbd */; };
 		E2D3EFA01C2AA6EB003D8A38 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF9F1C2AA6EB003D8A38 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
 		E2D3EFA61C2B7966003D8A38 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFA81C2BA562003D8A38 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA71C2BA562003D8A38 /* LoginScreenView.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFAA1C2BAB11003D8A38 /* SignupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA91C2BAB11003D8A38 /* SignupScreenView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		E2D3EF9C1C2AA542003D8A38 /* PickupHoops-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PickupHoops-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2D3EF9F1C2AA6EB003D8A38 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
+		E2D3EFA71C2BA562003D8A38 /* LoginScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		E2D3EFA91C2BAB11003D8A38 /* SignupScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,15 +144,15 @@
 		E2D3EF4B1C2A9A05003D8A38 /* PickupHoops */ = {
 			isa = PBXGroup;
 			children = (
+				E2D3EF521C2A9A05003D8A38 /* Main.storyboard */,
+				E2D3EFAB1C2BB0D6003D8A38 /* LoginViews */,
 				E2D3EF4C1C2A9A05003D8A38 /* AppDelegate.swift */,
 				E2D3EF4E1C2A9A05003D8A38 /* FirstViewController.swift */,
 				E2D3EF501C2A9A05003D8A38 /* SecondViewController.swift */,
-				E2D3EF521C2A9A05003D8A38 /* Main.storyboard */,
 				E2D3EF551C2A9A05003D8A38 /* Assets.xcassets */,
 				E2D3EF571C2A9A05003D8A38 /* LaunchScreen.storyboard */,
 				E2D3EF5A1C2A9A05003D8A38 /* Info.plist */,
 				E2D3EF9C1C2AA542003D8A38 /* PickupHoops-Bridging-Header.h */,
-				E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */,
 			);
 			path = PickupHoops;
 			sourceTree = "<group>";
@@ -189,6 +193,16 @@
 				E2D3EF7C1C2A9DDC003D8A38 /* Parse.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2D3EFAB1C2BB0D6003D8A38 /* LoginViews */ = {
+			isa = PBXGroup;
+			children = (
+				E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */,
+				E2D3EFA71C2BA562003D8A38 /* LoginScreenView.swift */,
+				E2D3EFA91C2BAB11003D8A38 /* SignupScreenView.swift */,
+			);
+			name = LoginViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +273,7 @@
 				TargetAttributes = {
 					E2D3EF481C2A9A05003D8A38 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 8324953WX9;
 					};
 					E2D3EF5E1C2A9A06003D8A38 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -322,6 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D3EFAA1C2BAB11003D8A38 /* SignupScreenView.swift in Sources */,
+				E2D3EFA81C2BA562003D8A38 /* LoginScreenView.swift in Sources */,
 				E2D3EF511C2A9A05003D8A38 /* SecondViewController.swift in Sources */,
 				E2D3EFA61C2B7966003D8A38 /* WelcomeScreenView.swift in Sources */,
 				E2D3EF4D1C2A9A05003D8A38 /* AppDelegate.swift in Sources */,
@@ -466,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -484,6 +502,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -563,6 +582,7 @@
 				E2D3EF751C2A9A06003D8A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2D3EF761C2A9A06003D8A38 /* Build configuration list for PBXNativeTarget "PickupHoopsTests" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +591,7 @@
 				E2D3EF781C2A9A06003D8A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2D3EF791C2A9A06003D8A38 /* Build configuration list for PBXNativeTarget "PickupHoopsUITests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +600,7 @@
 				E2D3EF7B1C2A9A06003D8A38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
