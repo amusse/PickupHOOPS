@@ -27,6 +27,7 @@
 		E2D3EF911C2A9F27003D8A38 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF901C2A9F27003D8A38 /* libz.tbd */; };
 		E2D3EF931C2A9F2F003D8A38 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF921C2A9F2F003D8A38 /* libsqlite3.tbd */; };
 		E2D3EFA01C2AA6EB003D8A38 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF9F1C2AA6EB003D8A38 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFA61C2B7966003D8A38 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		E2D3EF921C2A9F2F003D8A38 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E2D3EF9C1C2AA542003D8A38 /* PickupHoops-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PickupHoops-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2D3EF9F1C2AA6EB003D8A38 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				E2D3EF571C2A9A05003D8A38 /* LaunchScreen.storyboard */,
 				E2D3EF5A1C2A9A05003D8A38 /* Info.plist */,
 				E2D3EF9C1C2AA542003D8A38 /* PickupHoops-Bridging-Header.h */,
+				E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */,
 			);
 			path = PickupHoops;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2D3EF511C2A9A05003D8A38 /* SecondViewController.swift in Sources */,
+				E2D3EFA61C2B7966003D8A38 /* WelcomeScreenView.swift in Sources */,
 				E2D3EF4D1C2A9A05003D8A38 /* AppDelegate.swift in Sources */,
 				E2D3EF4F1C2A9A05003D8A38 /* FirstViewController.swift in Sources */,
 			);
