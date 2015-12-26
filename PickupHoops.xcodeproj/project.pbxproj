@@ -27,9 +27,14 @@
 		E2D3EF911C2A9F27003D8A38 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF901C2A9F27003D8A38 /* libz.tbd */; };
 		E2D3EF931C2A9F2F003D8A38 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF921C2A9F2F003D8A38 /* libsqlite3.tbd */; };
 		E2D3EFA01C2AA6EB003D8A38 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D3EF9F1C2AA6EB003D8A38 /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
-		E2D3EFA61C2B7966003D8A38 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */; settings = {ASSET_TAGS = (); }; };
-		E2D3EFA81C2BA562003D8A38 /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA71C2BA562003D8A38 /* LoginScreenView.swift */; settings = {ASSET_TAGS = (); }; };
-		E2D3EFAA1C2BAB11003D8A38 /* SignupScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA91C2BAB11003D8A38 /* SignupScreenView.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFA61C2B7966003D8A38 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA51C2B7966003D8A38 /* WelcomeVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFA81C2BA562003D8A38 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA71C2BA562003D8A38 /* LoginVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFAA1C2BAB11003D8A38 /* FirstNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFA91C2BAB11003D8A38 /* FirstNameVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFB71C2DEE3D003D8A38 /* LastNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFB61C2DEE3D003D8A38 /* LastNameVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFB91C2DF591003D8A38 /* UsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFB81C2DF591003D8A38 /* UsernameVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFBB1C2DF5A0003D8A38 /* EmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFBA1C2DF5A0003D8A38 /* EmailVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFBD1C2DF5AB003D8A38 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFBC1C2DF5AB003D8A38 /* PasswordVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E2D3EFBF1C2DF5BC003D8A38 /* VerifyPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EFBE1C2DF5BC003D8A38 /* VerifyPasswordVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,9 +83,14 @@
 		E2D3EF921C2A9F2F003D8A38 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		E2D3EF9C1C2AA542003D8A38 /* PickupHoops-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PickupHoops-Bridging-Header.h"; sourceTree = "<group>"; };
 		E2D3EF9F1C2AA6EB003D8A38 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
-		E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
-		E2D3EFA71C2BA562003D8A38 /* LoginScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
-		E2D3EFA91C2BAB11003D8A38 /* SignupScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupScreenView.swift; sourceTree = "<group>"; };
+		E2D3EFA51C2B7966003D8A38 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		E2D3EFA71C2BA562003D8A38 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		E2D3EFA91C2BAB11003D8A38 /* FirstNameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstNameVC.swift; sourceTree = "<group>"; };
+		E2D3EFB61C2DEE3D003D8A38 /* LastNameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LastNameVC.swift; sourceTree = "<group>"; };
+		E2D3EFB81C2DF591003D8A38 /* UsernameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameVC.swift; sourceTree = "<group>"; };
+		E2D3EFBA1C2DF5A0003D8A38 /* EmailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailVC.swift; sourceTree = "<group>"; };
+		E2D3EFBC1C2DF5AB003D8A38 /* PasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
+		E2D3EFBE1C2DF5BC003D8A38 /* VerifyPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyPasswordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				E2D3EF521C2A9A05003D8A38 /* Main.storyboard */,
-				E2D3EFAB1C2BB0D6003D8A38 /* LoginViews */,
 				E2D3EF4C1C2A9A05003D8A38 /* AppDelegate.swift */,
+				E2D3EFAB1C2BB0D6003D8A38 /* LoginViews */,
 				E2D3EF4E1C2A9A05003D8A38 /* FirstViewController.swift */,
 				E2D3EF501C2A9A05003D8A38 /* SecondViewController.swift */,
 				E2D3EF551C2A9A05003D8A38 /* Assets.xcassets */,
@@ -198,9 +208,14 @@
 		E2D3EFAB1C2BB0D6003D8A38 /* LoginViews */ = {
 			isa = PBXGroup;
 			children = (
-				E2D3EFA51C2B7966003D8A38 /* WelcomeScreenView.swift */,
-				E2D3EFA71C2BA562003D8A38 /* LoginScreenView.swift */,
-				E2D3EFA91C2BAB11003D8A38 /* SignupScreenView.swift */,
+				E2D3EFA51C2B7966003D8A38 /* WelcomeVC.swift */,
+				E2D3EFA71C2BA562003D8A38 /* LoginVC.swift */,
+				E2D3EFA91C2BAB11003D8A38 /* FirstNameVC.swift */,
+				E2D3EFB61C2DEE3D003D8A38 /* LastNameVC.swift */,
+				E2D3EFB81C2DF591003D8A38 /* UsernameVC.swift */,
+				E2D3EFBA1C2DF5A0003D8A38 /* EmailVC.swift */,
+				E2D3EFBC1C2DF5AB003D8A38 /* PasswordVC.swift */,
+				E2D3EFBE1C2DF5BC003D8A38 /* VerifyPasswordVC.swift */,
 			);
 			name = LoginViews;
 			sourceTree = "<group>";
@@ -337,11 +352,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D3EFAA1C2BAB11003D8A38 /* SignupScreenView.swift in Sources */,
-				E2D3EFA81C2BA562003D8A38 /* LoginScreenView.swift in Sources */,
+				E2D3EFAA1C2BAB11003D8A38 /* FirstNameVC.swift in Sources */,
+				E2D3EFBD1C2DF5AB003D8A38 /* PasswordVC.swift in Sources */,
+				E2D3EFA81C2BA562003D8A38 /* LoginVC.swift in Sources */,
 				E2D3EF511C2A9A05003D8A38 /* SecondViewController.swift in Sources */,
-				E2D3EFA61C2B7966003D8A38 /* WelcomeScreenView.swift in Sources */,
+				E2D3EFBB1C2DF5A0003D8A38 /* EmailVC.swift in Sources */,
+				E2D3EFA61C2B7966003D8A38 /* WelcomeVC.swift in Sources */,
+				E2D3EFB91C2DF591003D8A38 /* UsernameVC.swift in Sources */,
 				E2D3EF4D1C2A9A05003D8A38 /* AppDelegate.swift in Sources */,
+				E2D3EFBF1C2DF5BC003D8A38 /* VerifyPasswordVC.swift in Sources */,
+				E2D3EFB71C2DEE3D003D8A38 /* LastNameVC.swift in Sources */,
 				E2D3EF4F1C2A9A05003D8A38 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

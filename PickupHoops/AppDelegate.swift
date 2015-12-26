@@ -29,6 +29,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
+        // Change color of "back" button
+        UINavigationBar.appearance().tintColor = UIColor.blackColor()
+        
+        // Change background image of navigation bar.
+//        let background = UIImage(named: "basketball-nav-bar-2.png")
+//        UINavigationBar.appearance().setBackgroundImage(background, forBarMetrics: .Default)
+//        
         return true
     }
 

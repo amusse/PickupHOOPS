@@ -1,5 +1,5 @@
 //
-//  WelcomeScreenView.swift
+//  WelcomeVC.swift
 //  PickupHoops
 //
 //  Created by Ahmed Musse on 12/23/15.
@@ -10,7 +10,7 @@ import UIKit
 import Parse
 
 
-class WelcomeScreenView: UIViewController {
+class WelcomeVC: UIViewController {
     
     override func viewDidLoad()
     {
