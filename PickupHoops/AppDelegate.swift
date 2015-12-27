@@ -29,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // [Optional] Track statistics around application opens.
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
+        // Change color of "back" button
+        UINavigationBar.appearance().tintColor = UIColor.blackColor()
+        
         return true
     }
 
