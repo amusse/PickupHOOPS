@@ -9,21 +9,27 @@
 import UIKit
 import Parse
 
-
-class WelcomeVC: UIViewController {
-    
+class WelcomeVC: UIViewController
+{
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
     }
     
-    override func didReceiveMemoryWarning()
+    // Pressing the log in button prompts user to login. If user is
+    // already logged in, view transitions to home screen
+    @IBAction func btnLogin(sender: AnyObject)
     {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let currentUser = PFUser.currentUser()
+        if currentUser != nil
+        {
+            self.performSegueWithIdentifier("toHomeScreenVC", sender: self)
+        }
+        else
+        {
+            // Show the login screen
+            self.performSegueWithIdentifier("toLoginScreenVC", sender: self)
+        }
     }
-    
     
 }

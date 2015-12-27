@@ -9,9 +9,9 @@
 import UIKit
 import Parse
 
-class EmailVC: UIViewController {
-    
-    @IBOutlet weak var tbEmail: UITextField!
+class EmailVC: UIViewController
+{
+    @IBOutlet weak var tbEmail: UITextField!    // Email text field
     var firstName   = ""
     var lastName    = ""
     var userName    = ""
@@ -19,9 +19,12 @@ class EmailVC: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        // Add logo to navigation bar
         let logo = UIImage(named: "basketball-nav-bar-2.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
+        
         tbEmail.becomeFirstResponder()
     }
     
@@ -31,26 +34,25 @@ class EmailVC: UIViewController {
         self.view.endEditing(true)
     }
     
+    // Displays alert that email is invalid
     func displayAlert()
     {
-        // Alert that a confirmation email has been sent
         let alertController = UIAlertController(
             title: "Invalid Email!",
             message: "Sorry, please enter a valid email address.",
-            preferredStyle: UIAlertControllerStyle.Alert
-        )
+            preferredStyle: UIAlertControllerStyle.Alert)
         
         alertController.addAction(UIAlertAction(title: "OK",
             style: UIAlertActionStyle.Default,
             handler: { (alert: UIAlertAction!) in print("Invalid Email")}))
         
-        // Display alert
         self.presentViewController(
             alertController,
             animated: true,
             completion: nil)
     }
     
+    // After "Next" button is pressed, perform a segue to next screen
     @IBAction func btnNext(sender: AnyObject)
     {
         if (emailIsValid(tbEmail.text!))
@@ -80,7 +82,42 @@ class EmailVC: UIViewController {
     // Checks if email is valid
     func emailIsValid(username: NSString) -> Bool
     {
-        return true
+        var notExist: Bool = true
+        var isEmail: Bool
+        {
+            do
+            {
+                let regex = try NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .CaseInsensitive)
+                return regex.firstMatchInString(tbEmail.text!, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, tbEmail.text!.characters.count)) != nil
+            }
+            catch
+            {
+                return false
+            }
+        }
+        if (isEmail)
+        {
+            let emailQuery = PFUser.query()
+            emailQuery!.whereKey("email", equalTo: tbEmail.text!.lowercaseString.stringByTrimmingCharactersInSet(NSCharacterSet .whitespaceCharacterSet()))
+            emailQuery!.findObjectsInBackgroundWithBlock
+            {
+                    (objects: [PFObject]?, error: NSError?) -> Void in
+                    if error == nil
+                    {
+                        // The find succeeded.
+                        notExist = false
+                    }
+                    else
+                    {
+                        notExist = true
+                    }
+            }
+            return notExist
+        }
+        else
+        {
+            return false
+        }
     }
     
     // Send previous data to next view controller
@@ -90,19 +127,14 @@ class EmailVC: UIViewController {
         nextVC.firstName    = firstName
         nextVC.lastName     = lastName
         nextVC.userName     = userName
-        nextVC.email        = tbEmail.text!
+        nextVC.email        = tbEmail.text!.lowercaseString.stringByTrimmingCharactersInSet(NSCharacterSet .whitespaceCharacterSet())
         
     }
+    
+    // Displays navigation bar
     override func viewWillDisappear(animated: Bool)
     {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBarHidden = false
     }
-        
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
 }

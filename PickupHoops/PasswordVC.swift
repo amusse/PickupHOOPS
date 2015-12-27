@@ -9,19 +9,23 @@
 import UIKit
 import Parse
 
-class PasswordVC: UIViewController {
-    
-    @IBOutlet weak var tbPassword: UITextField!
+class PasswordVC: UIViewController
+{
+    @IBOutlet weak var tbPassword: UITextField!     // Password text field
     var firstName   = ""
     var lastName    = ""
     var userName    = ""
     var email       = ""
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        
+        // Add logo to navigation bar
         let logo = UIImage(named: "basketball-nav-bar-2.png")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
+        
         tbPassword.becomeFirstResponder()
     }
     
@@ -31,26 +35,25 @@ class PasswordVC: UIViewController {
         self.view.endEditing(true)
     }
     
+    // Displays alert that password is invalid
     func displayAlert()
     {
-        // Alert that a confirmation email has been sent
         let alertController = UIAlertController(
             title: "Invalid Password!",
             message: "Sorry, you've entered an invalid password. Please re-read the password requirements and try again.",
-            preferredStyle: UIAlertControllerStyle.Alert
-        )
+            preferredStyle: UIAlertControllerStyle.Alert)
         
         alertController.addAction(UIAlertAction(title: "OK",
             style: UIAlertActionStyle.Default,
             handler: { (alert: UIAlertAction!) in print("Invalid Password")}))
         
-        // Display alert
         self.presentViewController(
             alertController,
             animated: true,
             completion: nil)
     }
     
+    // After "Next" button is pressed, perform a segue to next screen
     @IBAction func btnNext(sender: AnyObject)
     {
         if (passwordIsValid(tbPassword.text!))
@@ -77,10 +80,22 @@ class PasswordVC: UIViewController {
         return true
     }
     
-    // Checks if email is valid
-    func passwordIsValid(username: NSString) -> Bool
+    // Checks if password is valid
+    func passwordIsValid(password: String) -> Bool
     {
-        return true
+        var isValid: Bool
+        {
+            do
+            {
+                let regex = try NSRegularExpression(pattern: "^(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{6,}$", options: .CaseInsensitive)
+                return regex.firstMatchInString(password, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, password.characters.count)) != nil
+            }
+            catch
+            {
+                return false
+            }
+        }
+        return isValid
     }
     
     // Send previous data to next view controller
@@ -94,17 +109,11 @@ class PasswordVC: UIViewController {
         nextVC.password     = tbPassword.text!
     }
 
-    
+    // Displays navigation bar
     override func viewWillDisappear(animated: Bool)
     {
         super.viewWillDisappear(animated)
         self.navigationController?.navigationBarHidden = false
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     
 }
