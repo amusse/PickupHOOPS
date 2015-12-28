@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
         
         // Change color of "back" button
-        UINavigationBar.appearance().tintColor = UIColor.blackColor()
+//        UINavigationBar.appearance().tintColor = UIColor.blackColor()
         
         return true
     }
