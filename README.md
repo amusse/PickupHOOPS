@@ -2,6 +2,6 @@
 
 Here are screenshots of the app in development.
 
-![ScreenShot](Screenshots/AppIcon.png =100x20)
+<img src="Screenshots/AppIcon.png" alt="App Icon" style="width:40;height:70"/>
 
 
