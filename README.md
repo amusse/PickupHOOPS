@@ -2,7 +2,7 @@
 
 Here are screenshots of the app in development.
 
-![ScreenShot](https://raw.github.com/amusse/PickupHoops/master/Screenshots/AppIcon.png)
+![ScreenShot](AppIcon.png)
 
 -------------------
 
