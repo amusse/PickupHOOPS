@@ -2,9 +2,6 @@
 
 Here are screenshots of the app in development.
 
-![ScreenShot](Screenshots/AppIcon.png)
-
--------------------
+![ScreenShot](Screenshots/AppIcon.png =100x20)
 
 
-![App Icon](https://github.com/amusse/PickupHoops/tree/master/Screenshots/AppIcon.png "App Icon")
