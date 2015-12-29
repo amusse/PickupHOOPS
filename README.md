@@ -2,7 +2,7 @@
 
 Here are screenshots of the app in development.
 
-![ScreenShot](AppIcon.png)
+![ScreenShot](Screenshots/AppIcon.png)
 
 -------------------
 
