@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E235F09F1C2FC6DF0061BA28 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F09E1C2FC6DF0061BA28 /* ForgotPasswordVC.swift */; settings = {ASSET_TAGS = (); }; };
-		E235F0A11C2FE9C70061BA28 /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0A01C2FE9C70061BA28 /* GamesVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E235F0A11C2FE9C70061BA28 /* GamesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0A01C2FE9C70061BA28 /* GamesTableVC.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0A31C2FE9F60061BA28 /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0A21C2FE9F60061BA28 /* RatingVC.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0A51C2FEA1B0061BA28 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0A41C2FEA1B0061BA28 /* ProfileVC.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0A91C3130CA0061BA28 /* ViewControllerOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0A81C3130CA0061BA28 /* ViewControllerOne.swift */; settings = {ASSET_TAGS = (); }; };
@@ -19,6 +19,8 @@
 		E235F0BC1C3131160061BA28 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0BB1C3131160061BA28 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0C11C3131630061BA28 /* ViewControllerThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0BE1C3131630061BA28 /* ViewControllerThree.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0C21C3131630061BA28 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0BF1C3131630061BA28 /* ViewControllerTwo.swift */; settings = {ASSET_TAGS = (); }; };
+		E235F0C51C3648C90061BA28 /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0C41C3648C90061BA28 /* GamesVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E235F0C71C364AC10061BA28 /* NewGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0C61C364AC10061BA28 /* NewGameVC.swift */; settings = {ASSET_TAGS = (); }; };
 		E2D3EF4D1C2A9A05003D8A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EF4C1C2A9A05003D8A38 /* AppDelegate.swift */; };
 		E2D3EF4F1C2A9A05003D8A38 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EF4E1C2A9A05003D8A38 /* HomeVC.swift */; };
 		E2D3EF541C2A9A05003D8A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3EF521C2A9A05003D8A38 /* Main.storyboard */; };
@@ -67,7 +69,7 @@
 
 /* Begin PBXFileReference section */
 		E235F09E1C2FC6DF0061BA28 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
-		E235F0A01C2FE9C70061BA28 /* GamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
+		E235F0A01C2FE9C70061BA28 /* GamesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesTableVC.swift; sourceTree = "<group>"; };
 		E235F0A21C2FE9F60061BA28 /* RatingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingVC.swift; sourceTree = "<group>"; };
 		E235F0A41C2FEA1B0061BA28 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		E235F0A81C3130CA0061BA28 /* ViewControllerOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerOne.swift; sourceTree = "<group>"; };
@@ -83,6 +85,8 @@
 		E235F0BB1C3131160061BA28 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E235F0BE1C3131630061BA28 /* ViewControllerThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerThree.swift; sourceTree = "<group>"; };
 		E235F0BF1C3131630061BA28 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		E235F0C41C3648C90061BA28 /* GamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
+		E235F0C61C364AC10061BA28 /* NewGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameVC.swift; sourceTree = "<group>"; };
 		E2D3EF491C2A9A05003D8A38 /* PickupHoops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickupHoops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D3EF4C1C2A9A05003D8A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D3EF4E1C2A9A05003D8A38 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -164,9 +168,11 @@
 				E235F0BF1C3131630061BA28 /* ViewControllerTwo.swift */,
 				E235F0BE1C3131630061BA28 /* ViewControllerThree.swift */,
 				E2D3EF4E1C2A9A05003D8A38 /* HomeVC.swift */,
-				E235F0A01C2FE9C70061BA28 /* GamesVC.swift */,
 				E235F0A21C2FE9F60061BA28 /* RatingVC.swift */,
 				E235F0A41C2FEA1B0061BA28 /* ProfileVC.swift */,
+				E235F0A01C2FE9C70061BA28 /* GamesTableVC.swift */,
+				E235F0C41C3648C90061BA28 /* GamesVC.swift */,
+				E235F0C61C364AC10061BA28 /* NewGameVC.swift */,
 			);
 			name = TabViews;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2D3EFAA1C2BAB11003D8A38 /* FirstNameVC.swift in Sources */,
+				E235F0C51C3648C90061BA28 /* GamesVC.swift in Sources */,
 				E2D3EFBD1C2DF5AB003D8A38 /* PasswordVC.swift in Sources */,
 				E235F0A51C2FEA1B0061BA28 /* ProfileVC.swift in Sources */,
 				E235F09F1C2FC6DF0061BA28 /* ForgotPasswordVC.swift in Sources */,
@@ -428,9 +435,10 @@
 				E2D3EFBF1C2DF5BC003D8A38 /* VerifyPasswordVC.swift in Sources */,
 				E2D3EFB71C2DEE3D003D8A38 /* LastNameVC.swift in Sources */,
 				E235F0C11C3131630061BA28 /* ViewControllerThree.swift in Sources */,
-				E235F0A11C2FE9C70061BA28 /* GamesVC.swift in Sources */,
+				E235F0A11C2FE9C70061BA28 /* GamesTableVC.swift in Sources */,
 				E235F0B91C3131090061BA28 /* CarbonTabSwipeScrollView.m in Sources */,
 				E2D3EF4F1C2A9A05003D8A38 /* HomeVC.swift in Sources */,
+				E235F0C71C364AC10061BA28 /* NewGameVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

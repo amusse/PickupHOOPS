@@ -13,7 +13,7 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
 
     var items = NSArray()
     var carbonTabSwipeNavigation: CarbonTabSwipeNavigation = CarbonTabSwipeNavigation()
-    var currentUser = PFUser.currentUser()      // The current user
+    var currentUser: PFUser!      // The current user
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,7 +66,7 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         case 0:
             return self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerOne") as! ViewControllerOne
         case 1:
-            return self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerTwo") as! ViewControllerTwo
+            return self.storyboard!.instantiateViewControllerWithIdentifier("GamesVC") as! GamesVC
         default:
             return self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerThree") as! ViewControllerThree
         }
