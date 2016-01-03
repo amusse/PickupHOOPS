@@ -21,6 +21,7 @@
 		E235F0C21C3131630061BA28 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0BF1C3131630061BA28 /* ViewControllerTwo.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0C51C3648C90061BA28 /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0C41C3648C90061BA28 /* GamesVC.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0C71C364AC10061BA28 /* NewGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0C61C364AC10061BA28 /* NewGameVC.swift */; settings = {ASSET_TAGS = (); }; };
+		E235F0C91C3903820061BA28 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0C81C3903820061BA28 /* MapVC.swift */; settings = {ASSET_TAGS = (); }; };
 		E2D3EF4D1C2A9A05003D8A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EF4C1C2A9A05003D8A38 /* AppDelegate.swift */; };
 		E2D3EF4F1C2A9A05003D8A38 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3EF4E1C2A9A05003D8A38 /* HomeVC.swift */; };
 		E2D3EF541C2A9A05003D8A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2D3EF521C2A9A05003D8A38 /* Main.storyboard */; };
@@ -87,6 +88,7 @@
 		E235F0BF1C3131630061BA28 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		E235F0C41C3648C90061BA28 /* GamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
 		E235F0C61C364AC10061BA28 /* NewGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameVC.swift; sourceTree = "<group>"; };
+		E235F0C81C3903820061BA28 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		E2D3EF491C2A9A05003D8A38 /* PickupHoops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickupHoops.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2D3EF4C1C2A9A05003D8A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2D3EF4E1C2A9A05003D8A38 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				E235F0A01C2FE9C70061BA28 /* GamesTableVC.swift */,
 				E235F0C41C3648C90061BA28 /* GamesVC.swift */,
 				E235F0C61C364AC10061BA28 /* NewGameVC.swift */,
+				E235F0C81C3903820061BA28 /* MapVC.swift */,
 			);
 			name = TabViews;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				E2D3EFBB1C2DF5A0003D8A38 /* EmailVC.swift in Sources */,
 				E235F0B71C3131090061BA28 /* CarbonSwipeRefresh.m in Sources */,
 				E2D3EFA61C2B7966003D8A38 /* WelcomeVC.swift in Sources */,
+				E235F0C91C3903820061BA28 /* MapVC.swift in Sources */,
 				E2D3EFB91C2DF591003D8A38 /* UsernameVC.swift in Sources */,
 				E2D3EF4D1C2A9A05003D8A38 /* AppDelegate.swift in Sources */,
 				E2D3EFBF1C2DF5BC003D8A38 /* VerifyPasswordVC.swift in Sources */,

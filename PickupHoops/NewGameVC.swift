@@ -17,8 +17,10 @@ class NewGameVC: UITableViewController
     @IBOutlet weak var lStartTime: UILabel!
     @IBOutlet weak var pckrDate: UIDatePicker!
     @IBOutlet weak var btnPickerDone: UIButton!
+    @IBOutlet weak var lLocation: UILabel!
     
     var row: Int = 0
+    var selectedLocation = CLLocationCoordinate2D(latitude: 0, longitude: 0)
     
     override func viewDidLoad()
     {
@@ -26,6 +28,7 @@ class NewGameVC: UITableViewController
         tvNotes.text = "Notes"
         pckrDate.hidden = true
         btnPickerDone.hidden = true
+        lLocation.text = "coordinate: \(selectedLocation.latitude), \(selectedLocation.longitude)"
     }
     
     @IBAction func btnCancel(sender: AnyObject)
@@ -45,6 +48,10 @@ class NewGameVC: UITableViewController
         {
             pckrDate.hidden = false
             btnPickerDone.hidden = false
+        }
+        else if (indexPath.row == 1)
+        {
+            self.performSegueWithIdentifier("MapVC", sender: self)
         }
     }
     
@@ -69,5 +76,12 @@ class NewGameVC: UITableViewController
         btnPickerDone.hidden = true
     }
    
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue)
+    {
+        let mapVC: MapVC = unwindSegue.sourceViewController as! MapVC
+        selectedLocation = mapVC.selectedLocation
+        lLocation.text = "coordinate: \(selectedLocation.latitude), \(selectedLocation.longitude)"
+    }
+    
     
 }
