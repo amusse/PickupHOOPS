@@ -1144,7 +1144,9 @@
                         <outlet property="lLocation" destination="noS-vf-k2j" id="uXY-du-vcx"/>
                         <outlet property="lStartTime" destination="eQd-oU-04L" id="Xot-11-pj2"/>
                         <outlet property="pckrDate" destination="foj-qa-Agm" id="8oT-zn-S01"/>
+                        <outlet property="scType" destination="tRx-DG-nS0" id="pa3-F8-j3e"/>
                         <outlet property="tvNotes" destination="pAX-1R-8Di" id="74Z-l0-5Y8"/>
+                        <outlet property="txtRating" destination="4nX-9i-SSc" id="8Q1-OJ-3Zk"/>
                         <segue destination="ViB-Vv-VE9" kind="presentation" identifier="MapVC" id="1uC-6C-qk2"/>
                     </connections>
                 </tableViewController>
