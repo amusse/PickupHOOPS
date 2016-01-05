@@ -88,7 +88,7 @@ class VerifyPasswordVC: UIViewController
         newUser.email = email
         newUser["first_name"] = firstName
         newUser["last_name"] = lastName
-        newUser["rating"] = 50
+        newUser["rating"] = 1000
         return newUser
     }
     

@@ -9,14 +9,17 @@
 import UIKit
 import Parse
 
-class ProfileVC: UITableViewController
+class FriendsVC: UIViewController
 {
     var currentUser = PFUser.currentUser()      // The current user
     
+    @IBOutlet weak var nbFriends: UINavigationBar!
     override func viewDidLoad()
     {
         super.viewDidLoad()
         currentUser = PFUser.currentUser()
+        nbFriends.topItem?.title = "Friends"
+        nbFriends.titleTextAttributes =  [NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 18)!]
     }
     
 }

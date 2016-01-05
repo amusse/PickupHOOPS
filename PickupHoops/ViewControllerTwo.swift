@@ -52,7 +52,7 @@ class ViewControllerTwo: UIViewController, UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        var viewT: ViewControllerThree = self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerThree") as! ViewControllerThree
+        let viewT: GameDetailsVC = self.storyboard!.instantiateViewControllerWithIdentifier("GameDetailsVC") as! GameDetailsVC
         self.navigationController!.pushViewController(viewT, animated: true)
     }
     

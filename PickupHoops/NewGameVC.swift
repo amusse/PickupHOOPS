@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class NewGameVC: UITableViewController
+class NewGameVC: UITableViewController, UITextViewDelegate
 {
 
     @IBOutlet weak var tvNotes: UITextView!
@@ -23,11 +23,12 @@ class NewGameVC: UITableViewController
     
     var row: Int = 0
     var selectedLocation = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+    var locationTitle = ""
     var currentUser: PFUser!
     var latitude = ""
     var longitude = ""
-    var startTime = ""
-    var endTime = ""
+    var startTime: NSDate!
+    var endTime: NSDate!
     var rating = 0
     var notes = ""
 
@@ -36,10 +37,35 @@ class NewGameVC: UITableViewController
         super.viewDidLoad()
         currentUser = PFUser.currentUser()
         
+        tvNotes.delegate = self
         tvNotes.text = "Notes"
+        tvNotes.textColor = UIColor.lightGrayColor()
+        
+        tvNotes.layer.borderWidth = 0.1
+        tvNotes.layer.cornerRadius = 10
         pckrDate.hidden = true
         btnPickerDone.hidden = true
         lLocation.text = "coordinate: \(selectedLocation.latitude), \(selectedLocation.longitude)"
+    }
+    
+    func textViewDidChange(textView: UITextView)
+    { //Handle the text changes here
+    }
+    
+    func textViewDidBeginEditing(textView: UITextView) {
+        if textView.textColor == UIColor.lightGrayColor()
+        {
+            textView.text = nil
+            textView.textColor = UIColor.blackColor()
+        }
+    }
+    
+    func textViewDidEndEditing(textView: UITextView) {
+        if textView.text.isEmpty
+        {
+            textView.text = "Notes"
+            textView.textColor = UIColor.lightGrayColor()
+        }
     }
     
     @IBAction func btnCancel(sender: AnyObject)
@@ -57,10 +83,10 @@ class NewGameVC: UITableViewController
         notes = tvNotes.text!
         rating = Int(txtRating.text!)!
         
-        
-        let game = PFObject(className: "Game")
+        let game = PFObject(className: "Games")
         game["type"]        = scType.titleForSegmentAtIndex(scType.selectedSegmentIndex)
         game["location"]    = PFGeoPoint(latitude: Double(latitude)!, longitude: Double(longitude)!)
+        game["locationTitle"] = locationTitle
         game["start"]       = startTime
         game["end"]         = endTime
         game["min_rating"]  = rating
@@ -68,6 +94,7 @@ class NewGameVC: UITableViewController
         game["num_players"] = 1
         game["players"]     = players
         game["host"]        = username
+        game["full"]        = false
         
         game.saveInBackground()
         self.dismissViewControllerAnimated(true, completion: nil)
@@ -94,12 +121,12 @@ class NewGameVC: UITableViewController
         if (row == 2)
         {
            lStartTime.text = strDate
-            startTime = strDate
+            startTime = pckrDate.date
         }
         else if(row == 3)
         {
             lEndTime.text = strDate
-            endTime = strDate
+            endTime = pckrDate.date
         }
     }
 

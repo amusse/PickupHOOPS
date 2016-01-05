@@ -43,8 +43,8 @@ class ViewControllerOne: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let view: ViewControllerThree = self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerThree") as! ViewControllerThree
-        self.navigationController!.pushViewController(view, animated: true)
+//        let view: GameDetailsVC = self.storyboard!.instantiateViewControllerWithIdentifier("GameDetailsVC") as! GameDetailsVC
+//        self.navigationController!.pushViewController(view, animated: true)
     }
     
     func refresh(sender: AnyObject) {

@@ -12,11 +12,14 @@ import Parse
 class RatingVC: UIViewController
 {
     var currentUser = PFUser.currentUser()      // The current user
+    @IBOutlet weak var nbRating: UINavigationBar!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         currentUser = PFUser.currentUser()
+        nbRating.topItem?.title = "Rating"
+        nbRating.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 18)!]
     }
     
 }

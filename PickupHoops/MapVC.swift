@@ -18,8 +18,9 @@ class MapVC: UIViewController, UISearchBarDelegate, CLLocationManagerDelegate
     let locationManager = CLLocationManager()
     var currentLocation = CLLocationCoordinate2D(latitude: 0, longitude: 0)
     var selectedLocation = CLLocationCoordinate2D(latitude: 0, longitude: 0)
-    
+    var locationTitle = ""
     var matchingItems: [MKMapItem] = [MKMapItem]()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -113,6 +114,8 @@ class MapVC: UIViewController, UISearchBarDelegate, CLLocationManagerDelegate
                 
                 let c = ann.coordinate
                 selectedLocation = ann.coordinate
+                locationTitle = ann.title!!
+                
                 print("coordinate: \(c.latitude), \(c.longitude)")
                 
                 //do something else with ann...
@@ -121,6 +124,7 @@ class MapVC: UIViewController, UISearchBarDelegate, CLLocationManagerDelegate
         }
         let prevVC = segue.destinationViewController as! NewGameVC
         prevVC.selectedLocation = selectedLocation
+        prevVC.locationTitle = locationTitle
     }
 
 }

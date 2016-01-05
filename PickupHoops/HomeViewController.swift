@@ -19,17 +19,13 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         super.viewDidLoad()
         currentUser = PFUser.currentUser()
         self.title = "Pickup Hoops"
-        items = [UIImage(named: "home")!, UIImage(named: "Stadium-24")!, UIImage(named: "Contacts-25")!, UIImage(named:"Trophy-25")!, UIImage(named:"Facebook-25")!, UIImage(named:"Twitter-25")!, UIImage(named:"Calendar 1-25")!, UIImage(named:"Search-25")!]
+        items = [UIImage(named: "home")!, UIImage(named: "Stadium-24")!, UIImage(named:"Trophy-25")!, UIImage(named: "Contacts-25")!]
         carbonTabSwipeNavigation = CarbonTabSwipeNavigation(items: items as [AnyObject], delegate: self)
         carbonTabSwipeNavigation.insertIntoRootViewController(self)
         self.style()
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
     
     // After pressing the logout button, the user signs out and we segue to the
     // log in screen
@@ -50,10 +46,10 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         carbonTabSwipeNavigation.toolbar.translucent = false
         carbonTabSwipeNavigation.setIndicatorColor(UIColor.blackColor())
-        carbonTabSwipeNavigation.setTabExtraWidth(30)
-        carbonTabSwipeNavigation.carbonSegmentedControl!.setWidth(80, forSegmentAtIndex: 0)
-        carbonTabSwipeNavigation.carbonSegmentedControl!.setWidth(80, forSegmentAtIndex: 1)
-        carbonTabSwipeNavigation.carbonSegmentedControl!.setWidth(80, forSegmentAtIndex: 2)
+        carbonTabSwipeNavigation.setTabExtraWidth(15)
+        carbonTabSwipeNavigation.carbonSegmentedControl!.setWidth(90, forSegmentAtIndex: 0)
+        carbonTabSwipeNavigation.carbonSegmentedControl!.setWidth(90, forSegmentAtIndex: 1)
+        carbonTabSwipeNavigation.carbonSegmentedControl!.setWidth(90, forSegmentAtIndex: 2)
         
         carbonTabSwipeNavigation.setNormalColor(UIColor.blackColor().colorWithAlphaComponent(0.6))
         carbonTabSwipeNavigation.setSelectedColor(UIColor.blackColor(), font: UIFont.boldSystemFontOfSize(14))
@@ -64,11 +60,13 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         
         switch index {
         case 0:
-            return self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerOne") as! ViewControllerOne
+            return self.storyboard!.instantiateViewControllerWithIdentifier("HomeScreenVC") as! HomeScreenVC
         case 1:
             return self.storyboard!.instantiateViewControllerWithIdentifier("GamesVC") as! GamesVC
+        case 2:
+            return self.storyboard!.instantiateViewControllerWithIdentifier("RatingVC") as! RatingVC
         default:
-            return self.storyboard!.instantiateViewControllerWithIdentifier("ViewControllerThree") as! ViewControllerThree
+            return self.storyboard!.instantiateViewControllerWithIdentifier("FriendsVC") as! FriendsVC
         }
         
     }

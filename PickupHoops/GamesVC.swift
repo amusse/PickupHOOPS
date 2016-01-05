@@ -13,10 +13,12 @@ class GamesVC: UIViewController
 {
     var currentUser = PFUser.currentUser()      // The current user
     
+    @IBOutlet weak var nbCurrentGames: UINavigationBar!
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        nbCurrentGames.topItem?.title = "Current Games"
+        nbCurrentGames.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 18)!]
     }
     
     @IBAction func btnAdd(sender: AnyObject)
