@@ -13,6 +13,7 @@ class RatingVC: UIViewController
 {
     var currentUser = PFUser.currentUser()      // The current user
     @IBOutlet weak var nbRating: UINavigationBar!
+    @IBOutlet weak var lRating: UILabel!
     
     override func viewDidLoad()
     {
@@ -20,6 +21,8 @@ class RatingVC: UIViewController
         currentUser = PFUser.currentUser()
         nbRating.topItem?.title = "Rating"
         nbRating.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 18)!]
+        let rating = currentUser!.objectForKey("rating") as? Int
+        lRating.text = String(rating!)
     }
     
 }

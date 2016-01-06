@@ -80,6 +80,10 @@ class NewGameVC: UITableViewController, UITextViewDelegate
         let players = NSMutableArray()
         players.addObject(username!)
         
+        // Assign leader to team A
+        let teamA = NSMutableArray()
+        teamA.addObject(username!)
+        
         notes = tvNotes.text!
         rating = Int(txtRating.text!)!
         
@@ -95,6 +99,12 @@ class NewGameVC: UITableViewController, UITextViewDelegate
         game["players"]     = players
         game["host"]        = username
         game["full"]        = false
+        game["teamA"]       = teamA
+        game["teamB"]       = NSMutableArray()
+        game["winsA"]       = 0
+        game["winsB"]       = 0
+        game["winner"]      = "A"
+        
         
         game.saveInBackground()
         self.dismissViewControllerAnimated(true, completion: nil)

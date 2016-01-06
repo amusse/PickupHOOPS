@@ -24,7 +24,11 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     var locationTitles  = [String]()
     var gameIDs         = [String]()
     var notes           = [String]()
+    var teams           = [String]()
+    var wins            = [String]()
     
+    var team            = "Team A"
+    var gameId          = ""
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -48,7 +52,7 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
             if error == nil
             {
                 //found objects
-                let i = 0
+                var i = 0
                 for game in games!
                 {
                     let players: NSMutableArray = game["players"] as! NSMutableArray
@@ -68,7 +72,47 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                             self.minRatings.append(game["min_rating"] as! (Int))
                             self.locationTitles.append(game["locationTitle"] as! (String))
                             self.notes.append(game["notes"] as! (String))
-                            print(game)
+                            let teamA = game["teamA"] as! NSMutableArray
+                            if (teamA.containsObject(self.currentUser.username!))
+                            {
+                                self.teams.append("Team A")
+                            }
+                            else
+                            {
+                                self.teams.append("Team B")
+                            }
+                            if (self.teams[i] == "Team A")
+                            {
+                                if (game["winner"] as! String == "Team A")
+                                {
+                                    self.wins.append("W")
+                                }
+                                else if (game["winner"] as! String == "Team B")
+                                {
+                                    self.wins.append("L")
+                                }
+                                else
+                                {
+                                    self.wins.append("Tie")
+                                }
+                            }
+                            else
+                            {
+                                if (game["winner"] as! String == "Team B")
+                                {
+                                    self.wins.append("W")
+                                }
+                                else if (game["winner"] as! String == "Team A")
+                                {
+                                    self.wins.append("L")
+                                }
+                                else
+                                {
+                                    self.wins.append("Tie")
+                                }
+                            }
+                            
+                            //print(game)
                         }
                         else
                         {
@@ -83,8 +127,40 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                             self.minRatings[i] = (game["min_rating"] as! (Int))
                             self.locationTitles[i] = (game["locationTitle"] as! (String))
                             self.notes[i] = (game["notes"] as! (String))
+                            if (self.teams[i] == "Team A")
+                            {
+                                if (game["winner"] as! String == "Team A")
+                                {
+                                    self.wins[i] = "W"
+                                }
+                                else if (game["winner"] as! String == "Team B")
+                                {
+                                    self.wins[i] = "L"
+                                }
+                                else
+                                {
+                                    self.wins[i] = "Tie"
+                                }
+                            }
+                            else
+                            {
+                                if (game["winner"] as! String == "Team B")
+                                {
+                                    self.wins[i] = "W"
+                                }
+                                else if (game["winner"] as! String == "Team A")
+                                {
+                                    self.wins[i] = "L"
+                                }
+                                else
+                                {
+                                    self.wins[i] = "Tie"
+                                }
+                            }
+                            
                         }
                     }
+                    i++
                 }
                 self.tableView.reloadData()
                 print(self.locations.count)
@@ -116,26 +192,48 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         singleCell.lNumPlayers.text = numPlayers[indexPath.row].description
         singleCell.lType.text = types[indexPath.row]
         singleCell.lMinRating.text = minRatings[indexPath.row].description
+        singleCell.lTeam.text   = teams[indexPath.row]
+        singleCell.lWL.text     = wins[indexPath.row]
+        if (wins[indexPath.row] ==  "W")
+        {
+            singleCell.lWL.textColor = UIColor.greenColor()
+            print("Green")
+        }
+        else if (wins[indexPath.row] ==  "L")
+        {
+            singleCell.lWL.textColor = UIColor.redColor()
+            print("Red")
+        }
+        else
+        {
+            singleCell.lWL.textColor = UIColor.orangeColor()
+            print("Orange")
+        }
         return singleCell
     }
 
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
+        team = teams[indexPath.row]
+        gameId = gameIDs[indexPath.row]
         self.performSegueWithIdentifier("showView", sender: self)
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         if segue.identifier == "showView"
         {
-            let vc = segue.destinationViewController 
-            
+            let vc = segue.destinationViewController as! PopUpVC
+            vc.team = team
+            vc.gameId = gameId
             let controller = vc.popoverPresentationController
             
             if controller != nil
             {
                 controller?.delegate = self
+                
             }
         }
     }

@@ -67,6 +67,40 @@ class GameDetailsVC: UIViewController
         }
     }
 
+    func displayAlertJoined()
+    {
+        let alertController = UIAlertController(
+            title: "You have joined the game",
+            message: "Check the home screen when the game is full to see what team you are on",
+            preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK",
+            style: UIAlertActionStyle.Default,
+            handler: { action in self.navigationController?.popViewControllerAnimated(true)}))
+        
+        self.presentViewController(
+            alertController,
+            animated: true,
+            completion: nil)
+    }
+    
+    func displayAlertDuplicate()
+    {
+        let alertController = UIAlertController(
+            title: "Already joined the game",
+            message: "Check the home screen when the game is over to see what team you were on and the result of the game",
+            preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alertController.addAction(UIAlertAction(title: "OK",
+            style: UIAlertActionStyle.Default,
+            handler: { action in print("Already joined game.")}))
+        
+        self.presentViewController(
+            alertController,
+            animated: true,
+            completion: nil)
+    }
+    
     // Join game
     @IBAction func btnJoin(sender: AnyObject)
     {
@@ -81,29 +115,43 @@ class GameDetailsVC: UIViewController
                 for game in games!
                 {
                     let players: NSMutableArray = game["players"] as! NSMutableArray
-                    players.addObject(self.currentUser.username!)
-                    game["players"] = players
-                    let total = self.number + 1
-                    game["num_players"] = total
-                    if (total >= 10)
+                    if (!players.containsObject(self.currentUser.username!))
                     {
-                        game["full"] = true
+                        // Add the player to the game
+                        players.addObject(self.currentUser.username!)
+                        game["players"] = players
+                        
+                        // Increase the number of players
+                        let total = self.number + 1
+                        game["num_players"] = total
+                        
+                        // Add to the teams
+                        let teamA = game["teamA"] as! NSMutableArray
+                        let teamB = game["teamB"] as! NSMutableArray
+                        if (teamA.count > teamB.count)
+                        {
+                            teamB.addObject(self.currentUser.username!)
+                            game["teamB"] = teamB
+                        }
+                        else
+                        {
+                            teamA.addObject(self.currentUser.username!)
+                            game["teamA"] = teamA
+                        }
+                        if (total >= 10)
+                        {
+                            game["full"] = true
+                        }
+                        game.saveInBackground()
+                        self.displayAlertJoined()
                     }
-                    game.saveInBackground()
+                    else
+                    {
+                        self.displayAlertDuplicate()
+                    }
+                    
                 }
-                let alertController = UIAlertController(
-                    title: "You have Joined the Game",
-                    message: "Check the home screen when the game is full to see what team you are on",
-                    preferredStyle: UIAlertControllerStyle.Alert)
                 
-                alertController.addAction(UIAlertAction(title: "OK",
-                    style: UIAlertActionStyle.Default,
-                    handler: { action in self.navigationController?.popViewControllerAnimated(true)}))
-                
-                self.presentViewController(
-                    alertController,
-                    animated: true,
-                    completion: nil)
 
             }
             else

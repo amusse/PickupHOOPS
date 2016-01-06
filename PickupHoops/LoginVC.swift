@@ -89,14 +89,15 @@ class LoginVC: UITableViewController, UITextFieldDelegate
             if ((user) != nil)
             {
                 // Check to see if the email is verified
-                let isEmailVerified = PFUser.currentUser()?.objectForKey("emailVerified")?.boolValue
+//                let isEmailVerified = PFUser.currentUser()?.objectForKey("emailVerified")?.boolValue
+                let isEmailVerified = true
                 if (isEmailVerified == true)
                 {
                     self.performSegueWithIdentifier("toHomeVC", sender: self)
                 }
                 else
                 {
-                    self.displayNotVerified()
+//                    self.displayNotVerified()
                 }
             }
             else
@@ -130,14 +131,15 @@ class LoginVC: UITableViewController, UITextFieldDelegate
                 self.actInd.stopAnimating()
                 if ((user) != nil)
                 {
-                    let isEmailVerified = PFUser.currentUser()?.objectForKey("emailVerified")?.boolValue
+//                    let isEmailVerified = PFUser.currentUser()?.objectForKey("emailVerified")?.boolValue
+                    let isEmailVerified = true
                     if (isEmailVerified == true)
                     {
                         self.performSegueWithIdentifier("toHomeVC", sender: self)
                     }
                     else
                     {
-                        self.displayNotVerified()
+//                        self.displayNotVerified()
                     }
                 }
                 else

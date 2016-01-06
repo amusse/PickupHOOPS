@@ -16,8 +16,11 @@ class SingleRowCell: UITableViewCell
     @IBOutlet weak var lNumPlayers: UILabel!
     @IBOutlet weak var lType: UILabel!
     @IBOutlet weak var lMinRating: UILabel!
+    @IBOutlet weak var lTeam: UILabel!
+    @IBOutlet weak var lWL: UILabel!
     
-    override func awakeFromNib() {
+    override func awakeFromNib()
+    {
         super.awakeFromNib()
     }
     
