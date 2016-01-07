@@ -112,6 +112,7 @@ class PopUpVC: UIViewController
                         {
                             game["winner"] = "Tie"
                         }
+                        print(game["winner"] as! String)
                         game.saveInBackground()
                     }
                 }

@@ -47,7 +47,7 @@ class GameDetailsVC: UIViewController
         tvNotes.layer.cornerRadius = 10
         
         lLocation.text      = location
-        lType.text          = type
+        lType.text          = ""
         lMinRating.text     = minRating
         lCoordinates.text   = coordinates
         lStartTime.text     = start
@@ -142,6 +142,14 @@ class GameDetailsVC: UIViewController
                         {
                             game["full"] = true
                         }
+                        
+                        // Increase the average rating
+                        let rating = game["avg_rating"] as! Int
+                        let userRating = self.currentUser.objectForKey("rating") as! Int
+                        let avgRating = Double(rating + userRating)/Double(total)
+                        let newAvg: Int = Int(floor(avgRating))
+                        game["avg_rating"] = newAvg
+                        
                         game.saveInBackground()
                         self.displayAlertJoined()
                     }

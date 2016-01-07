@@ -18,8 +18,7 @@ class NewGameVC: UITableViewController, UITextViewDelegate
     @IBOutlet weak var pckrDate: UIDatePicker!
     @IBOutlet weak var btnPickerDone: UIButton!
     @IBOutlet weak var lLocation: UILabel!
-    @IBOutlet weak var scType: UISegmentedControl!
-    @IBOutlet weak var txtRating: UITextField!
+    @IBOutlet weak var nbDate: UINavigationBar!
     
     var row: Int = 0
     var selectedLocation = CLLocationCoordinate2D(latitude: 0, longitude: 0)
@@ -45,7 +44,8 @@ class NewGameVC: UITableViewController, UITextViewDelegate
         tvNotes.layer.cornerRadius = 10
         pckrDate.hidden = true
         btnPickerDone.hidden = true
-        lLocation.text = "coordinate: \(selectedLocation.latitude), \(selectedLocation.longitude)"
+        nbDate.hidden = true
+        lLocation.text = "Location"
     }
     
     func textViewDidChange(textView: UITextView)
@@ -85,15 +85,14 @@ class NewGameVC: UITableViewController, UITextViewDelegate
         teamA.addObject(username!)
         
         notes = tvNotes.text!
-        rating = Int(txtRating.text!)!
         
         let game = PFObject(className: "Games")
-        game["type"]        = scType.titleForSegmentAtIndex(scType.selectedSegmentIndex)
+        game["type"]        = "Public"
         game["location"]    = PFGeoPoint(latitude: Double(latitude)!, longitude: Double(longitude)!)
         game["locationTitle"] = locationTitle
         game["start"]       = startTime
         game["end"]         = endTime
-        game["min_rating"]  = rating
+        game["min_rating"]  = 0
         game["notes"]       = notes
         game["num_players"] = 1
         game["players"]     = players
@@ -104,6 +103,7 @@ class NewGameVC: UITableViewController, UITextViewDelegate
         game["winsA"]       = 0
         game["winsB"]       = 0
         game["winner"]      = "A"
+        game["avg_rating"]  = currentUser!.objectForKey("rating") as! Int
         
         
         game.saveInBackground()
@@ -116,6 +116,7 @@ class NewGameVC: UITableViewController, UITextViewDelegate
         {
             pckrDate.hidden = false
             btnPickerDone.hidden = false
+            nbDate.hidden = false
         }
         else if (indexPath.row == 1)
         {
@@ -144,16 +145,18 @@ class NewGameVC: UITableViewController, UITextViewDelegate
     {
         pckrDate.hidden = true
         btnPickerDone.hidden = true
+        nbDate.hidden = true
     }
    
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue)
     {
         let mapVC: MapVC = unwindSegue.sourceViewController as! MapVC
         selectedLocation = mapVC.selectedLocation
+        locationTitle = mapVC.locationTitle
         latitude = selectedLocation.latitude.description
         longitude = selectedLocation.longitude.description
         
-        lLocation.text = "coordinate: " + latitude + ", " + longitude
+        lLocation.text = locationTitle
         
     }
     

@@ -21,7 +21,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
     var endTimes        = [NSDate]()
     var numPlayers      = [Int]()
     var types           = [String]()
-    var minRatings      = [Int]()
+    var avgRatings      = [Int]()
     var locationTitles  = [String]()
     var gameIDs         = [String]()
     var notes           = [String]()
@@ -62,7 +62,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
                         self.endTimes.append(game["end"] as! (NSDate))
                         self.numPlayers.append(game["num_players"] as! (Int))
                         self.types.append(game["type"] as! (String))
-                        self.minRatings.append(game["min_rating"] as! (Int))
+                        self.avgRatings.append(game["avg_rating"] as! (Int))
                         self.locationTitles.append(game["locationTitle"] as! (String))
                         self.notes.append(game["notes"] as! (String))
                         print(game)
@@ -77,7 +77,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
                         self.endTimes[i] = (game["end"] as! (NSDate))
                         self.numPlayers[i] = (game["num_players"] as! (Int))
                         self.types[i] = (game["type"] as! (String))
-                        self.minRatings[i] = (game["min_rating"] as! (Int))
+                        self.avgRatings[i] = (game["avg_rating"] as! (Int))
                         self.locationTitles[i] = (game["locationTitle"] as! (String))
                         self.notes[i] = (game["notes"] as! (String))
                     }
@@ -99,7 +99,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
 
         nextVC.location        = locationTitles[indexPath.row]
         nextVC.type            = types[indexPath.row]
-        nextVC.minRating       = minRatings[indexPath.row].description
+        nextVC.minRating       = avgRatings[indexPath.row].description
         nextVC.coordinates     = locations[indexPath.row]
         nextVC.start           = startTimes[indexPath.row].description
         nextVC.end             = endTimes[indexPath.row].description
@@ -129,8 +129,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
         singleCell.lLocation.text = locationTitles[indexPath.row]
         singleCell.lStartTime.text = time
         singleCell.lNumPlayers.text = numPlayers[indexPath.row].description
-        singleCell.lType.text = types[indexPath.row]
-        singleCell.lMinRating.text = minRatings[indexPath.row].description
+        singleCell.lMinRating.text = avgRatings[indexPath.row].description
         return singleCell
     }
     
@@ -138,7 +137,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
     {
         NSLog("REFRESH")
         self.getGames()
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(500 * Double(NSEC_PER_MSEC)))
         dispatch_after(delayTime, dispatch_get_main_queue()) {
             self.endRefreshing()
         }
