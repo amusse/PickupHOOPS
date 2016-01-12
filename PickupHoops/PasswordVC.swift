@@ -83,18 +83,19 @@ class PasswordVC: UIViewController
     // Checks if password is valid
     func passwordIsValid(password: String) -> Bool
     {
-        var isValid: Bool
-        {
-            do
-            {
-                let regex = try NSRegularExpression(pattern: "^(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{6,}$", options: .CaseInsensitive)
-                return regex.firstMatchInString(password, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, password.characters.count)) != nil
-            }
-            catch
-            {
-                return false
-            }
-        }
+//        var isValid: Bool
+//        {
+//            do
+//            {
+//                let regex = try NSRegularExpression(pattern: "^(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{6,}$", options: .CaseInsensitive)
+//                return regex.firstMatchInString(password, options: NSMatchingOptions(rawValue: 0), range: NSMakeRange(0, password.characters.count)) != nil
+//            }
+//            catch
+//            {
+//                return false
+//            }
+//        }
+        let isValid = true
         return isValid
     }
     

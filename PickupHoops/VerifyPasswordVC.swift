@@ -80,6 +80,18 @@ class VerifyPasswordVC: UIViewController
             completion: nil)
     }
     
+    func createUser() -> PFUser
+    {
+        let newUser = PFUser()
+        newUser.username = userName
+        newUser.password = password
+        newUser.email = email
+        newUser["first_name"] = firstName
+        newUser["last_name"] = lastName
+        newUser["rating"] = 1000
+        return newUser
+    }
+    
     // After pressing "Submit" button, this function signs a user up if possible
     @IBAction func btnSubmit(sender: AnyObject)
     {
@@ -87,13 +99,7 @@ class VerifyPasswordVC: UIViewController
         {
             self.actInd.startAnimating()
             
-            let newUser = PFUser()
-            newUser.username = userName
-            newUser.password = password
-            newUser.email = email
-            newUser["first_name"] = firstName
-            newUser["last_name"] = lastName
-            
+            let newUser = createUser()
             newUser.signUpInBackgroundWithBlock(
             { (succeed, error) -> Void in
                 self.actInd.stopAnimating()
@@ -133,13 +139,7 @@ class VerifyPasswordVC: UIViewController
         {
             self.actInd.startAnimating()
             
-            let newUser = PFUser()
-            newUser.username = userName
-            newUser.password = password
-            newUser.email = email
-            newUser["first_name"] = firstName
-            newUser["last_name"] = lastName
-            
+            let newUser = createUser()
             newUser.signUpInBackgroundWithBlock(
             { (succeed, error) -> Void in
                 self.actInd.stopAnimating()
