@@ -49,7 +49,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
             if error == nil
             {
                 //found objects
-                let i = 0
+                var i = 0
                 for game in games!
                 {
                     if (!self.gameIDs.contains(game.objectId!))
@@ -81,7 +81,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
                         self.locationTitles[i] = (game["locationTitle"] as! (String))
                         self.notes[i] = (game["notes"] as! (String))
                     }
-                    
+                    i++
                 }
                 self.tableView.reloadData()
                 print(self.locations.count)

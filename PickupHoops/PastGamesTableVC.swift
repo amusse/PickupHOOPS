@@ -29,6 +29,7 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     var avgRatings      = [Int]()
     var team            = "Team A"
     var gameId          = ""
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -47,21 +48,28 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         let query = PFQuery(className: "Games")
         query.orderByAscending("end")
         query.whereKey("end", lessThan: NSDate())
-        query.findObjectsInBackgroundWithBlock {
+        query.findObjectsInBackgroundWithBlock
+        {
             (games:[PFObject]?, error: NSError?) -> Void in
             if error == nil
             {
-                //found objects
                 var i = 0
+                // If there was no error, we found some games
                 for game in games!
                 {
                     let players: NSMutableArray = game["players"] as! NSMutableArray
+                    
+                    // If the current user is in this game
                     if (players.containsObject(self.currentUser.username!))
                     {
+                        // If a new game as finished, store its information
                         if (!self.gameIDs.contains(game.objectId!))
                         {
+                            // Gets the game location in latitude and longitude
                             let location = game["location"] as! (PFGeoPoint)
                             let combined = location.latitude.description + " " + location.longitude.description
+                            
+                            // Populate game data
                             self.gameIDs.append(game.objectId!)
                             self.locations.append(combined)
                             self.startTimes.append(game["start"] as! (NSDate))
@@ -72,29 +80,19 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                             self.locationTitles.append(game["locationTitle"] as! (String))
                             self.notes.append(game["notes"] as! (String))
                             let teamA = game["teamA"] as! NSMutableArray
+                            
+                            // If the current user is in Team A, store that information
                             if (teamA.containsObject(self.currentUser.username!))
                             {
                                 self.teams.append("Team A")
-                            }
-                            else
-                            {
-                                self.teams.append("Team B")
-                            }
-                            if (self.teams[i] == "Team A")
-                            {
+                                // If Team A won the game, record that in the wins array
                                 if (game["winner"] as! String == "Team A")
                                 {
                                     self.wins.append("W")
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating + 20
-                                    self.currentUser["rating"] = rating
                                 }
                                 else if (game["winner"] as! String == "Team B")
                                 {
                                     self.wins.append("L")
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating - 20
-                                    self.currentUser["rating"] = rating
                                 }
                                 else
                                 {
@@ -103,43 +101,28 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                             }
                             else
                             {
+                                self.teams.append("Team B")
+                                // If Team B won the game, record that in the wins array
                                 if (game["winner"] as! String == "Team B")
                                 {
                                     self.wins.append("W")
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating + 20
-                                    self.currentUser["rating"] = rating
                                 }
                                 else if (game["winner"] as! String == "Team A")
                                 {
                                     self.wins.append("L")
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating - 20
-                                    self.currentUser["rating"] = rating
                                 }
                                 else
                                 {
                                     self.wins.append("Tie")
                                 }
                             }
-                            
-                            //print(game)
                         }
                         else
                         {
-                            let location = game["location"] as! (PFGeoPoint)
-                            let combined = location.latitude.description + " " + location.longitude.description
-                            self.gameIDs[i] = game.objectId!
-                            self.locations[i] = combined
-                            self.startTimes[i] = (game["start"] as! (NSDate))
-                            self.endTimes[i] = (game["end"] as! (NSDate))
-                            self.numPlayers[i] = (game["num_players"] as! (Int))
-                            self.types[i] = (game["type"] as! (String))
-                            self.avgRatings[i] = (game["avg_rating"] as! (Int))
-                            self.locationTitles[i] = (game["locationTitle"] as! (String))
-                            self.notes[i] = (game["notes"] as! (String))
+                            // If user is on Team A
                             if (self.teams[i] == "Team A")
                             {
+                                // If Team A is the winner of the game and wasn't before, increase rating
                                 if (game["winner"] as! String == "Team A" && self.wins[i] != "W")
                                 {
                                     self.wins[i] = "W"
@@ -200,10 +183,9 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                                     self.currentUser["rating"] = rating
                                 }
                             }
-                            
+                            i++
                         }
                     }
-                    i++
                     self.currentUser.saveInBackground()
                 }
                 self.tableView.reloadData()
