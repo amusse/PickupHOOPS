@@ -1,0 +1,3769 @@
+
+
+****************************************************
+****************************************************
+         New Population size: 500
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    50
+Mean:            1000.0
+Std dev:         31.742
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    50
+Mean:            1000.0
+Std dev:         6.313
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    50
+Mean:            1000.0
+Std dev:         160.53
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    150
+Mean:            1000.0
+Std dev:         55.726
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    150
+Mean:            1000.006
+Std dev:         11.163
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    150
+Mean:            1000.0
+Std dev:         279.769
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    250
+Mean:            1000.076
+Std dev:         71.382
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    250
+Mean:            999.987
+Std dev:         13.924
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    250
+Mean:            999.733
+Std dev:         358.292
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    350
+Mean:            1000.243
+Std dev:         81.907
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    350
+Mean:            1000.071
+Std dev:         16.846
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    350
+Mean:            999.462
+Std dev:         417.673
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    450
+Mean:            998.677
+Std dev:         91.039
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    450
+Mean:            1000.18
+Std dev:         18.059
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    450
+Mean:            996.066
+Std dev:         456.816
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    550
+Mean:            1000.593
+Std dev:         97.791
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    550
+Mean:            999.888
+Std dev:         19.439
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    550
+Mean:            996.795
+Std dev:         473.976
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    650
+Mean:            1000.532
+Std dev:         100.793
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    650
+Mean:            999.796
+Std dev:         19.852
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    650
+Mean:            998.327
+Std dev:         498.213
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    750
+Mean:            998.986
+Std dev:         102.345
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    750
+Mean:            1000.248
+Std dev:         20.655
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    750
+Mean:            994.273
+Std dev:         518.033
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    850
+Mean:            1000.677
+Std dev:         106.251
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    850
+Mean:            1000.093
+Std dev:         21.273
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    850
+Mean:            1001.564
+Std dev:         534.664
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 500
+Games played:    950
+Mean:            999.497
+Std dev:         108.199
+
+
+-------------------
+
+
+Method 2: 
+Population size: 500
+Games played:    950
+Mean:            1000.563
+Std dev:         21.821
+
+
+-------------------
+
+
+Method 3: 
+Population size: 500
+Games played:    950
+Mean:            1003.514
+Std dev:         551.489
+
+
+-------------------
+
+
+
+
+****************************************************
+****************************************************
+         New Population size: 1000
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    100
+Mean:            1000.0
+Std dev:         31.383
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    100
+Mean:            1000.0
+Std dev:         6.367
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    100
+Mean:            1000.0
+Std dev:         159.772
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    300
+Mean:            1000.0
+Std dev:         55.287
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    300
+Mean:            1000.0
+Std dev:         11.01
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    300
+Mean:            999.941
+Std dev:         281.399
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    500
+Mean:            999.923
+Std dev:         72.25
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    500
+Mean:            999.997
+Std dev:         14.061
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    500
+Mean:            999.866
+Std dev:         357.233
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    700
+Mean:            999.907
+Std dev:         82.596
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    700
+Mean:            1000.044
+Std dev:         16.447
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    700
+Mean:            1001.185
+Std dev:         416.815
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    900
+Mean:            1000.465
+Std dev:         90.56
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    900
+Mean:            1000.04
+Std dev:         18.355
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    900
+Mean:            996.668
+Std dev:         461.797
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    1100
+Mean:            1000.215
+Std dev:         96.218
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    1100
+Mean:            1000.083
+Std dev:         19.223
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    1100
+Mean:            998.975
+Std dev:         487.401
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    1300
+Mean:            999.015
+Std dev:         99.998
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    1300
+Mean:            999.851
+Std dev:         20.125
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    1300
+Mean:            998.418
+Std dev:         496.947
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    1500
+Mean:            999.546
+Std dev:         102.048
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    1500
+Mean:            999.993
+Std dev:         20.594
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    1500
+Mean:            999.997
+Std dev:         516.876
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    1700
+Mean:            999.2
+Std dev:         106.312
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    1700
+Mean:            999.959
+Std dev:         21.152
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    1700
+Mean:            997.814
+Std dev:         523.098
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 1000
+Games played:    1900
+Mean:            999.893
+Std dev:         108.653
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1000
+Games played:    1900
+Mean:            999.789
+Std dev:         21.622
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1000
+Games played:    1900
+Mean:            998.825
+Std dev:         544.483
+
+
+-------------------
+
+
+
+
+****************************************************
+****************************************************
+         New Population size: 1500
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    150
+Mean:            1000.0
+Std dev:         31.766
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    150
+Mean:            1000.0
+Std dev:         6.366
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    150
+Mean:            1000.0
+Std dev:         159.958
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    450
+Mean:            999.99
+Std dev:         55.424
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    450
+Mean:            1000.0
+Std dev:         11.045
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    450
+Mean:            1000.0
+Std dev:         278.844
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    750
+Mean:            999.873
+Std dev:         71.796
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    750
+Mean:            1000.01
+Std dev:         14.268
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    750
+Mean:            999.655
+Std dev:         358.035
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    1050
+Mean:            999.881
+Std dev:         82.648
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    1050
+Mean:            999.994
+Std dev:         16.652
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    1050
+Mean:            1000.247
+Std dev:         413.52
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    1350
+Mean:            999.738
+Std dev:         90.48
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    1350
+Mean:            999.944
+Std dev:         18.503
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    1350
+Mean:            1002.301
+Std dev:         461.119
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    1650
+Mean:            999.459
+Std dev:         96.927
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    1650
+Mean:            999.961
+Std dev:         19.439
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    1650
+Mean:            1000.052
+Std dev:         479.096
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    1950
+Mean:            1000.549
+Std dev:         99.353
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    1950
+Mean:            999.841
+Std dev:         20.103
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    1950
+Mean:            1000.515
+Std dev:         504.346
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    2250
+Mean:            1000.118
+Std dev:         102.211
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    2250
+Mean:            1000.128
+Std dev:         20.756
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    2250
+Mean:            999.708
+Std dev:         527.214
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    2550
+Mean:            999.498
+Std dev:         105.781
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    2550
+Mean:            999.94
+Std dev:         21.063
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    2550
+Mean:            1002.088
+Std dev:         536.098
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 1500
+Games played:    2850
+Mean:            1000.124
+Std dev:         109.141
+
+
+-------------------
+
+
+Method 2: 
+Population size: 1500
+Games played:    2850
+Mean:            1000.033
+Std dev:         21.786
+
+
+-------------------
+
+
+Method 3: 
+Population size: 1500
+Games played:    2850
+Mean:            999.951
+Std dev:         531.152
+
+
+-------------------
+
+
+
+
+****************************************************
+****************************************************
+         New Population size: 2000
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    200
+Mean:            1000.0
+Std dev:         31.867
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    200
+Mean:            1000.0
+Std dev:         6.319
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    200
+Mean:            1000.0
+Std dev:         160.366
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    600
+Mean:            999.976
+Std dev:         55.73
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    600
+Mean:            999.996
+Std dev:         11.157
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    600
+Mean:            1000.073
+Std dev:         279.193
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    1000
+Mean:            999.854
+Std dev:         70.735
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    1000
+Mean:            1000.015
+Std dev:         14.339
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    1000
+Mean:            1000.06
+Std dev:         355.193
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    1400
+Mean:            999.715
+Std dev:         82.607
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    1400
+Mean:            1000.038
+Std dev:         16.726
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    1400
+Mean:            999.745
+Std dev:         416.093
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    1800
+Mean:            999.821
+Std dev:         91.302
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    1800
+Mean:            999.965
+Std dev:         17.863
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    1800
+Mean:            999.359
+Std dev:         458.462
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    2200
+Mean:            999.97
+Std dev:         96.184
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    2200
+Mean:            1000.017
+Std dev:         19.275
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    2200
+Mean:            1000.03
+Std dev:         479.71
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    2600
+Mean:            1000.459
+Std dev:         99.856
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    2600
+Mean:            1000.042
+Std dev:         20.346
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    2600
+Mean:            1001.092
+Std dev:         506.654
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    3000
+Mean:            999.753
+Std dev:         103.444
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    3000
+Mean:            999.928
+Std dev:         20.819
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    3000
+Mean:            998.207
+Std dev:         520.154
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    3400
+Mean:            1000.024
+Std dev:         105.702
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    3400
+Mean:            1000.081
+Std dev:         21.289
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    3400
+Mean:            997.141
+Std dev:         536.843
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 2000
+Games played:    3800
+Mean:            999.88
+Std dev:         107.411
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2000
+Games played:    3800
+Mean:            999.877
+Std dev:         21.528
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2000
+Games played:    3800
+Mean:            999.557
+Std dev:         543.387
+
+
+-------------------
+
+
+
+
+****************************************************
+****************************************************
+         New Population size: 2500
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    250
+Mean:            1000.0
+Std dev:         31.885
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    250
+Mean:            1000.0
+Std dev:         6.406
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    250
+Mean:            1000.0
+Std dev:         159.882
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    750
+Mean:            1000.0
+Std dev:         55.643
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    750
+Mean:            1000.0
+Std dev:         11.068
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    750
+Mean:            999.982
+Std dev:         277.699
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    1250
+Mean:            1000.08
+Std dev:         71.117
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    1250
+Mean:            999.97
+Std dev:         14.253
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    1250
+Mean:            999.659
+Std dev:         354.215
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    1750
+Mean:            999.861
+Std dev:         83.25
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    1750
+Mean:            1000.015
+Std dev:         16.445
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    1750
+Mean:            1000.512
+Std dev:         423.114
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    2250
+Mean:            1000.232
+Std dev:         91.788
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    2250
+Mean:            1000.07
+Std dev:         18.19
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    2250
+Mean:            999.048
+Std dev:         458.925
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    2750
+Mean:            1000.379
+Std dev:         95.998
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    2750
+Mean:            1000.063
+Std dev:         19.292
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    2750
+Mean:            1003.549
+Std dev:         489.331
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    3250
+Mean:            1000.45
+Std dev:         100.466
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    3250
+Mean:            1000.142
+Std dev:         20.186
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    3250
+Mean:            1000.509
+Std dev:         505.324
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    3750
+Mean:            999.871
+Std dev:         103.726
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    3750
+Mean:            1000.025
+Std dev:         20.678
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    3750
+Mean:            996.577
+Std dev:         523.732
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    4250
+Mean:            1000.101
+Std dev:         106.028
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    4250
+Mean:            999.978
+Std dev:         21.086
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    4250
+Mean:            998.484
+Std dev:         533.254
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 2500
+Games played:    4750
+Mean:            999.879
+Std dev:         107.34
+
+
+-------------------
+
+
+Method 2: 
+Population size: 2500
+Games played:    4750
+Mean:            999.907
+Std dev:         21.828
+
+
+-------------------
+
+
+Method 3: 
+Population size: 2500
+Games played:    4750
+Mean:            1005.186
+Std dev:         540.986
+
+
+-------------------
+
+
+
+
+****************************************************
+****************************************************
+         New Population size: 3000
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    300
+Mean:            1000.0
+Std dev:         32.164
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    300
+Mean:            1000.0
+Std dev:         6.465
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    300
+Mean:            1000.0
+Std dev:         159.589
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    900
+Mean:            1000.01
+Std dev:         55.215
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    900
+Mean:            999.999
+Std dev:         11.031
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    900
+Mean:            999.986
+Std dev:         279.034
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    1500
+Mean:            999.999
+Std dev:         71.282
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    1500
+Mean:            999.984
+Std dev:         14.095
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    1500
+Mean:            999.844
+Std dev:         360.205
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    2100
+Mean:            999.87
+Std dev:         83.016
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    2100
+Mean:            999.974
+Std dev:         16.855
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    2100
+Mean:            1000.249
+Std dev:         415.947
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    2700
+Mean:            1000.521
+Std dev:         91.302
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    2700
+Mean:            1000.084
+Std dev:         18.29
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    2700
+Mean:            1000.306
+Std dev:         457.276
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    3300
+Mean:            1000.135
+Std dev:         96.682
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    3300
+Mean:            1000.13
+Std dev:         19.347
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    3300
+Mean:            1001.352
+Std dev:         486.018
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    3900
+Mean:            1000.283
+Std dev:         99.898
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    3900
+Mean:            999.95
+Std dev:         20.029
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    3900
+Mean:            997.683
+Std dev:         501.926
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    4500
+Mean:            1000.07
+Std dev:         103.69
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    4500
+Mean:            1000.007
+Std dev:         20.694
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    4500
+Mean:            1001.96
+Std dev:         518.167
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    5100
+Mean:            999.993
+Std dev:         106.504
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    5100
+Mean:            1000.049
+Std dev:         21.334
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    5100
+Mean:            1001.252
+Std dev:         539.231
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 3000
+Games played:    5700
+Mean:            999.653
+Std dev:         108.847
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3000
+Games played:    5700
+Mean:            1000.099
+Std dev:         21.656
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3000
+Games played:    5700
+Mean:            1002.681
+Std dev:         557.486
+
+
+-------------------
+
+
+
+
+****************************************************
+****************************************************
+         New Population size: 3500
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    350
+Mean:            1000.0
+Std dev:         31.912
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    350
+Mean:            1000.0
+Std dev:         6.442
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    350
+Mean:            1000.0
+Std dev:         160.039
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    1050
+Mean:            1000.0
+Std dev:         55.509
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    1050
+Mean:            999.999
+Std dev:         11.119
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    1050
+Mean:            1000.054
+Std dev:         278.752
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    1750
+Mean:            999.883
+Std dev:         71.225
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    1750
+Mean:            999.987
+Std dev:         14.229
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    1750
+Mean:            999.766
+Std dev:         357.153
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    2450
+Mean:            1000.152
+Std dev:         82.699
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    2450
+Mean:            999.992
+Std dev:         16.578
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    2450
+Mean:            1000.211
+Std dev:         419.038
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    3150
+Mean:            999.794
+Std dev:         91.443
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    3150
+Mean:            999.94
+Std dev:         18.329
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    3150
+Mean:            999.835
+Std dev:         458.164
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    3850
+Mean:            1000.487
+Std dev:         96.831
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    3850
+Mean:            999.982
+Std dev:         19.31
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    3850
+Mean:            1001.379
+Std dev:         487.771
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    4550
+Mean:            1000.306
+Std dev:         100.786
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    4550
+Mean:            1000.053
+Std dev:         20.139
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    4550
+Mean:            1002.613
+Std dev:         505.007
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    5250
+Mean:            999.713
+Std dev:         103.512
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    5250
+Mean:            1000.046
+Std dev:         20.641
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    5250
+Mean:            1000.982
+Std dev:         520.099
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    5950
+Mean:            999.893
+Std dev:         105.708
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    5950
+Mean:            999.967
+Std dev:         21.125
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    5950
+Mean:            999.476
+Std dev:         533.801
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 3500
+Games played:    6650
+Mean:            999.696
+Std dev:         108.506
+
+
+-------------------
+
+
+Method 2: 
+Population size: 3500
+Games played:    6650
+Mean:            999.913
+Std dev:         21.559
+
+
+-------------------
+
+
+Method 3: 
+Population size: 3500
+Games played:    6650
+Mean:            999.936
+Std dev:         542.957
+
+
+-------------------
+
+
+
+
+****************************************************
+****************************************************
+         New Population size: 4000
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    400
+Mean:            1000.0
+Std dev:         31.875
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    400
+Mean:            1000.0
+Std dev:         6.368
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    400
+Mean:            1000.0
+Std dev:         159.984
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    1200
+Mean:            1000.012
+Std dev:         55.193
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    1200
+Mean:            1000.001
+Std dev:         11.125
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    1200
+Mean:            1000.003
+Std dev:         276.557
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    2000
+Mean:            999.868
+Std dev:         71.048
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    2000
+Mean:            1000.006
+Std dev:         14.364
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    2000
+Mean:            999.361
+Std dev:         359.29
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    2800
+Mean:            999.923
+Std dev:         83.339
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    2800
+Mean:            999.984
+Std dev:         16.646
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    2800
+Mean:            999.576
+Std dev:         417.584
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    3600
+Mean:            999.745
+Std dev:         90.97
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    3600
+Mean:            1000.018
+Std dev:         18.216
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    3600
+Mean:            999.508
+Std dev:         461.071
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    4400
+Mean:            999.717
+Std dev:         96.223
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    4400
+Mean:            999.937
+Std dev:         19.266
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    4400
+Mean:            998.988
+Std dev:         484.953
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    5200
+Mean:            1000.106
+Std dev:         100.223
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    5200
+Mean:            1000.076
+Std dev:         20.08
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    5200
+Mean:            1001.563
+Std dev:         506.67
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    6000
+Mean:            999.782
+Std dev:         103.206
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    6000
+Mean:            1000.009
+Std dev:         20.757
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    6000
+Mean:            1003.032
+Std dev:         520.287
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    6800
+Mean:            1000.099
+Std dev:         106.115
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    6800
+Mean:            999.9
+Std dev:         21.205
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    6800
+Mean:            999.82
+Std dev:         531.889
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 4000
+Games played:    7600
+Mean:            999.84
+Std dev:         107.921
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4000
+Games played:    7600
+Mean:            1000.102
+Std dev:         21.704
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4000
+Games played:    7600
+Mean:            998.791
+Std dev:         545.111
+
+
+-------------------
+
+
+
+
+****************************************************
+****************************************************
+         New Population size: 4500
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    450
+Mean:            1000.0
+Std dev:         32.005
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    450
+Mean:            1000.0
+Std dev:         6.445
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    450
+Mean:            1000.0
+Std dev:         160.496
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    1350
+Mean:            999.996
+Std dev:         55.373
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    1350
+Mean:            1000.0
+Std dev:         11.059
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    1350
+Mean:            1000.004
+Std dev:         279.593
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    2250
+Mean:            999.916
+Std dev:         71.412
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    2250
+Mean:            1000.004
+Std dev:         14.244
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    2250
+Mean:            1000.323
+Std dev:         358.241
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    3150
+Mean:            1000.199
+Std dev:         82.861
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    3150
+Mean:            1000.025
+Std dev:         16.63
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    3150
+Mean:            999.039
+Std dev:         417.82
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    4050
+Mean:            1000.012
+Std dev:         90.679
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    4050
+Mean:            1000.002
+Std dev:         18.347
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    4050
+Mean:            999.63
+Std dev:         455.581
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    4950
+Mean:            1000.024
+Std dev:         95.867
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    4950
+Mean:            1000.112
+Std dev:         19.517
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    4950
+Mean:            999.947
+Std dev:         489.14
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    5850
+Mean:            1000.28
+Std dev:         99.754
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    5850
+Mean:            1000.035
+Std dev:         20.11
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    5850
+Mean:            1000.742
+Std dev:         509.463
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    6750
+Mean:            999.939
+Std dev:         103.132
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    6750
+Mean:            999.972
+Std dev:         20.68
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    6750
+Mean:            1001.858
+Std dev:         519.2
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    7650
+Mean:            999.431
+Std dev:         105.482
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    7650
+Mean:            999.992
+Std dev:         21.359
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    7650
+Mean:            999.392
+Std dev:         534.478
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 4500
+Games played:    8550
+Mean:            1000.116
+Std dev:         108.162
+
+
+-------------------
+
+
+Method 2: 
+Population size: 4500
+Games played:    8550
+Mean:            1000.053
+Std dev:         21.494
+
+
+-------------------
+
+
+Method 3: 
+Population size: 4500
+Games played:    8550
+Mean:            1001.255
+Std dev:         546.365
+
+
+-------------------
+
+
+****************************************************
+****************************************************
+         New Population size: 5000
+****************************************************
+****************************************************
+
+
+**********************************
+            GAME 1
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    500
+Mean:            1000.0
+Std dev:         32.048
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    500
+Mean:            1000.0
+Std dev:         6.39
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    500
+Mean:            1000.0
+Std dev:         159.995
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 2
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    1500
+Mean:            1000.006
+Std dev:         55.356
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    1500
+Mean:            1000.001
+Std dev:         10.989
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    1500
+Mean:            999.957
+Std dev:         277.979
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 3
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    2500
+Mean:            1000.006
+Std dev:         71.203
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    2500
+Mean:            1000.016
+Std dev:         14.185
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    2500
+Mean:            999.883
+Std dev:         358.448
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 4
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    3500
+Mean:            1000.169
+Std dev:         83.144
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    3500
+Mean:            999.979
+Std dev:         16.592
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    3500
+Mean:            999.829
+Std dev:         414.278
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 5
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    4500
+Mean:            1000.109
+Std dev:         90.832
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    4500
+Mean:            999.916
+Std dev:         18.245
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    4500
+Mean:            998.975
+Std dev:         457.89
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 6
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    5500
+Mean:            1000.086
+Std dev:         95.915
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    5500
+Mean:            999.98
+Std dev:         19.361
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    5500
+Mean:            999.666
+Std dev:         487.061
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 7
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    6500
+Mean:            1000.278
+Std dev:         100.365
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    6500
+Mean:            1000.029
+Std dev:         20.044
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    6500
+Mean:            998.33
+Std dev:         504.976
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 8
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    7500
+Mean:            1000.432
+Std dev:         103.452
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    7500
+Mean:            1000.099
+Std dev:         20.629
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    7500
+Mean:            1000.84
+Std dev:         521.679
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 9
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    8500
+Mean:            1000.586
+Std dev:         106.791
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    8500
+Mean:            999.948
+Std dev:         21.191
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    8500
+Mean:            999.267
+Std dev:         532.704
+
+
+-------------------
+
+
+
+
+**********************************
+            GAME 10
+**********************************
+
+
+Method 1: 
+Population size: 5000
+Games played:    9500
+Mean:            1000.434
+Std dev:         108.866
+
+
+-------------------
+
+
+Method 2: 
+Population size: 5000
+Games played:    9500
+Mean:            999.919
+Std dev:         21.449
+
+
+-------------------
+
+
+Method 3: 
+Population size: 5000
+Games played:    9500
+Mean:            999.368
+Std dev:         546.963
+
+
+-------------------
+
+
+
