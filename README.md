@@ -1,6 +1,6 @@
 # PickupHoops
 
-PickupHoops strives to connect local basketball players together by creating pickup games at convenient locations, while also maintaining a rating for each user. Each user has the ability to create a game (public or private) and set a minimum rating requirement to join that game. Each player can then choose to join any game based on their rating. The rating of a player is determined by their performance in each game and the outcome of the game.
+PickupHoops strives to connect local basketball players together by creating pickup games at convenient locations, while also maintaining a rating for each user. Each user has the ability to create a game. Each player can then choose to join any game based on their rating. The rating of a player is determined by their performance in each game and the outcome of the game.
 
 Here are screenshots of the app in development.
 
@@ -18,8 +18,12 @@ Here are screenshots of the app in development.
 
 <img src="Screenshots/Alert.PNG" alt="Alert Screen" width="30%" height="30%"/>
 
-<img src="Screenshots/HomeScreen.PNG" alt="Home Screen" width="30%" height="30%"/>
+<img src="Screenshots/PastGames.PNG" alt="Past Games Screen" width="30%" height="30%"/>
 
-<img src="Screenshots/GamesTab.PNG" alt="Games Tab Screen" width="30%" height="30%"/>
+<img src="Screenshots/CurrentGames.PNG" alt="Current Games Screen" width="30%" height="30%"/>
+
+<img src="Screenshots/Location.PNG" alt="Location Screen" width="30%" height="30%"/>
+
+<img src="Screenshots/Friends.PNG" alt="Friends Screen" width="30%" height="30%"/>
 
 
