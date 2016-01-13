@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 
+// This view contains the GamesTableVC
 class GamesVC: UIViewController
 {
     var currentUser = PFUser.currentUser()      // The current user

@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 
+// This view is a popup view that allows the user to input the result of a game
 class PopUpVC: UIViewController
 {
     var currentUser :PFUser!
@@ -21,6 +22,7 @@ class PopUpVC: UIViewController
         currentUser = PFUser.currentUser()
     }
     
+    // If user presses the "Won" button, record that the current user has won the game
     @IBAction func btnWon(sender: AnyObject)
     {
         let query = PFQuery(className: "Games")
@@ -30,7 +32,6 @@ class PopUpVC: UIViewController
                 (games:[PFObject]?, error: NSError?) -> Void in
                 if error == nil
                 {
-                    //found objects
                     for game in games!
                     {
                         if (self.team == "Team A")
@@ -46,6 +47,13 @@ class PopUpVC: UIViewController
                             game["winsB"] = wins
                         }
                         game.saveInBackground()
+                        
+                        // Wait for data to get saved
+                        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * Double(NSEC_PER_SEC)))
+                        dispatch_after(delayTime, dispatch_get_main_queue())
+                        {
+                        }
+                        
                         if (game["winsA"] as! Int > game["winsB"] as! Int)
                         {
                             game["winner"] = "Team A"
@@ -58,23 +66,25 @@ class PopUpVC: UIViewController
                         {
                             game["winner"] = "Tie"
                         }
-                        print(game["winner"] as! String)
                         game.saveInBackground()
+
+                        // Wait for data to get saved
+                        dispatch_after(delayTime, dispatch_get_main_queue())
+                        {
+                            
+                        }
+                        print(game["winner"] as! String)
                     }
-                    
-                    
                 }
                 else
                 {
                     print(error)
                 }
-        
-
         }
         self.dismissViewControllerAnimated(true, completion: nil)
-
     }
     
+    // If user presses the "Lost" button, record that the current user has lost the game
     @IBAction func btnLost(sender: AnyObject)
     {
         let query = PFQuery(className: "Games")
@@ -100,6 +110,13 @@ class PopUpVC: UIViewController
                             game["winsA"] = wins
                         }
                         game.saveInBackground()
+                        
+                        // Wait for data to get saved
+                        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(3 * Double(NSEC_PER_SEC)))
+                        dispatch_after(delayTime, dispatch_get_main_queue())
+                            {
+                        }
+
                         if (game["winsA"] as! Int > game["winsB"] as! Int)
                         {
                             game["winner"] = "Team A"
@@ -112,8 +129,15 @@ class PopUpVC: UIViewController
                         {
                             game["winner"] = "Tie"
                         }
-                        print(game["winner"] as! String)
                         game.saveInBackground()
+                        
+                        // Wait for data to get saved
+                        dispatch_after(delayTime, dispatch_get_main_queue())
+                        {
+                        }
+                        
+                        print(game["winner"] as! String)
+                        
                     }
                 }
                 else

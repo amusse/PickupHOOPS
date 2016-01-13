@@ -9,30 +9,11 @@
 import UIKit
 import Parse
 
+// This class is just used for testing
 class Test: UIViewController
 {
     override func viewDidLoad()
     {
-        let query = PFQuery(className: "Games")
-        query.orderByAscending("end")
-        query.whereKey("end", greaterThan: NSDate())
-        query.findObjectsInBackgroundWithBlock {
-            (games:[PFObject]?, error: NSError?) -> Void in
-            if error == nil
-            {
-                //found objects
-                for game in games!
-                {
-                    print(game.objectId)
-                    print((game["end"] as! (NSDate)).description)
-                }
-            }
-            else
-            {
-                print(error)
-            }
-        }
-
         
     }
 

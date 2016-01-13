@@ -124,8 +124,8 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="lAvgRating" destination="iS0-n5-zd6" id="hgd-kF-eyW"/>
                                             <outlet property="lLocation" destination="my5-0Z-Ml0" id="waz-94-vd9"/>
-                                            <outlet property="lMinRating" destination="iS0-n5-zd6" id="6Pk-S1-hvh"/>
                                             <outlet property="lNumPlayers" destination="FR6-wV-6zy" id="JU2-o9-OwO"/>
                                             <outlet property="lStartTime" destination="SWc-5l-sk8" id="gUa-17-Pa4"/>
                                             <outlet property="lTeam" destination="wlv-wz-pCx" id="a7L-Y8-lcx"/>
@@ -1397,8 +1397,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="lAvgRating" destination="a3G-cD-fsM" id="CBQ-pE-tSY"/>
                                     <outlet property="lLocation" destination="T1N-KG-TLr" id="1a7-pY-p2U"/>
-                                    <outlet property="lMinRating" destination="a3G-cD-fsM" id="wsc-Nu-vt0"/>
                                     <outlet property="lNumPlayers" destination="fHB-On-F5s" id="XFe-IK-X0s"/>
                                     <outlet property="lStartTime" destination="nsx-we-f3L" id="lC2-Kr-nRv"/>
                                 </connections>

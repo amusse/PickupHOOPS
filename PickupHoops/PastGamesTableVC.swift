@@ -1,32 +1,38 @@
 //
-//  ViewControllerOne.swift
-//  Carbon Kit Swift
+//  PastGamesTableVC.swift
+//  PickupHoops
 //
-//  Created by Melies Kubrick on 10/12/15.
-//  Copyright (c) 2015 Melies Kubrick. All rights reserved.
+//  Created by Ahmed Musse on 1/5/16.
+//  Copyright © 2016 Pickup Sports. All rights reserved.
 //
 
 import UIKit
 import Parse
 
-class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate {
-
+// This view displays all of the previous games that the current user played in. It also allows
+// the user to input the result of the game
+class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPopoverPresentationControllerDelegate
+{
     @IBOutlet weak var tableView: UITableView!
+    
     var refresh: CarbonSwipeRefresh = CarbonSwipeRefresh()
-    var currentUser: PFUser!     // The current user
+    
+    var currentUser: PFUser!                // The current user
 
-    var locations       = [String]()
-    var startTimes      = [NSDate]()
-    var endTimes        = [NSDate]()
-    var numPlayers      = [Int]()
-    var types           = [String]()
-    var minRatings      = [Int]()
-    var locationTitles  = [String]()
-    var gameIDs         = [String]()
-    var notes           = [String]()
-    var teams           = [String]()
-    var wins            = [String]()
-    var avgRatings      = [Int]()
+    // These properties pertain to each game a user played
+    var locations       = [String]()        // Latitude and longitude coordinates of location
+    var startTimes      = [NSDate]()        // Start times of each game
+    var endTimes        = [NSDate]()        // End times of each game
+    var numPlayers      = [Int]()           // Number of players in each game
+    var types           = [String]()        // Whether or not the game is private or public
+    var avgRatings      = [Int]()           // Average rating for each game
+    var locationTitles  = [String]()        // The name of the location of the game
+    var gameIDs         = [String]()        // The Parse objectIDs of each game
+    var notes           = [String]()        // The notes for a specific game
+    var teams           = [String]()        // The team the current user is on
+    var wins            = [String]()        // Whether or not the user won a game
+    
+    // Data to pass to next view controller
     var team            = "Team A"
     var gameId          = ""
     
@@ -40,13 +46,49 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         refresh.colors = [UIColor.blueColor(), UIColor.redColor(), UIColor.orangeColor(), UIColor.greenColor()]
         self.view.addSubview(refresh)
         refresh.addTarget(self, action: "refresh:", forControlEvents: .ValueChanged)
+    }
+    
+    // This function updates the rating for a user according to the Elo Rating System
+    func updateRating(result: String, gamesPlayed: Int, teamAvg: Int)
+    {
+        // K is their gain factor according to the elo rating system
+        var K = 32.0
         
+        let rating = Double(self.currentUser.objectForKey("rating") as! Int)
+        
+        // If the user has played a small number of games, their rating should be volatile
+        if (gamesPlayed < 10)
+        {
+            K = 64.0
+        }
+        else
+        {
+            K = 32.0
+        }
+        
+        let playerGain = floor(((rating/Double(teamAvg)) / (1/5) * K))
+        let change = Int(playerGain)
+        
+        if (result == "W")
+        {
+            // Increase player rating
+            currentUser["rating"] = Int(rating) + change
+        }
+        if (result == "L")
+        {
+            // Decrease player rating
+            currentUser["rating"] = Int(rating) - change
+        }
+        currentUser.saveInBackground()
     }
 
+    // Updates all the properties for this class by retreiving a "Game" from Parse
     func getGames()
     {
         let query = PFQuery(className: "Games")
         query.orderByAscending("end")
+        
+        // Get games that already occurred
         query.whereKey("end", lessThan: NSDate())
         query.findObjectsInBackgroundWithBlock
         {
@@ -54,7 +96,6 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
             if error == nil
             {
                 var i = 0
-                // If there was no error, we found some games
                 for game in games!
                 {
                     let players: NSMutableArray = game["players"] as! NSMutableArray
@@ -62,7 +103,7 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                     // If the current user is in this game
                     if (players.containsObject(self.currentUser.username!))
                     {
-                        // If a new game as finished, store its information
+                        // If a new game has finished, add this game into our properties
                         if (!self.gameIDs.contains(game.objectId!))
                         {
                             // Gets the game location in latitude and longitude
@@ -79,12 +120,13 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                             self.avgRatings.append(game["avg_rating"] as! (Int))
                             self.locationTitles.append(game["locationTitle"] as! (String))
                             self.notes.append(game["notes"] as! (String))
-                            let teamA = game["teamA"] as! NSMutableArray
                             
                             // If the current user is in Team A, store that information
+                            let teamA = game["teamA"] as! NSMutableArray
                             if (teamA.containsObject(self.currentUser.username!))
                             {
                                 self.teams.append("Team A")
+                                
                                 // If Team A won the game, record that in the wins array
                                 if (game["winner"] as! String == "Team A")
                                 {
@@ -100,9 +142,8 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                                 }
                             }
                             else
-                            {
+                            {   // Otherwise the current user is in Team B, store its information
                                 self.teams.append("Team B")
-                                // If Team B won the game, record that in the wins array
                                 if (game["winner"] as! String == "Team B")
                                 {
                                     self.wins.append("W")
@@ -116,71 +157,74 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
                                     self.wins.append("Tie")
                                 }
                             }
+                            
+                            // Calcualte average rating for each team
+                            print(game["teamARating"] as! Int)
+                            let averageRatingA = floor(Double((game["teamARating"] as! Int))/5)
+                            game["teamARating"] = Int(averageRatingA)
+                            let averageRatingB = floor(Double(game["teamBRating"] as! Int)/5)
+                            game["teamBRating"] = Int(averageRatingB)
+                            
                         }
                         else
                         {
-                            // If user is on Team A
+                            let gamesPlayed = self.currentUser.objectForKey("gamesPlayed") as! Int
+                            var teamAvg = 0
+                            // If there is no new game, then just refresh our data
                             if (self.teams[i] == "Team A")
                             {
+                                teamAvg = game["teamARating"] as! Int
+                                
                                 // If Team A is the winner of the game and wasn't before, increase rating
                                 if (game["winner"] as! String == "Team A" && self.wins[i] != "W")
                                 {
                                     self.wins[i] = "W"
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating + 20
-                                    self.currentUser["rating"] = rating
+                                    self.updateRating("W", gamesPlayed: gamesPlayed , teamAvg: teamAvg)
                                 }
+                                    
                                 else if (game["winner"] as! String == "Team B" && self.wins[i] != "L")
                                 {
                                     self.wins[i] = "L"
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating - 20
-                                    self.currentUser["rating"] = rating
+                                    self.updateRating("L", gamesPlayed: gamesPlayed , teamAvg: teamAvg)
+
                                 }
                                 else if (game["winner"] as! String == "Tie" && self.wins[i] == "W")
                                 {
                                     self.wins[i] = "Tie"
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating - 20
-                                    self.currentUser["rating"] = rating
+                                    self.updateRating("L", gamesPlayed: gamesPlayed , teamAvg: teamAvg)
+
                                 }
                                 else if (game["winner"] as! String == "Tie" && self.wins[i] == "L")
                                 {
                                     self.wins[i] = "Tie"
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating + 20
-                                    self.currentUser["rating"] = rating
+                                    self.updateRating("W", gamesPlayed: gamesPlayed , teamAvg: teamAvg)
                                 }
                             }
                             else
                             {
+                                teamAvg = game["teamBRating"] as! Int
                                 if (game["winner"] as! String == "Team B" && self.wins[i] != "W")
                                 {
                                     self.wins[i] = "W"
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating + 20
-                                    self.currentUser["rating"] = rating
+                                    self.updateRating("W", gamesPlayed: gamesPlayed , teamAvg: teamAvg)
+
                                 }
                                 else if (game["winner"] as! String == "Team A" && self.wins[i] != "L")
                                 {
                                     self.wins[i] = "L"
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating - 20
-                                    self.currentUser["rating"] = rating
+                                    self.updateRating("L", gamesPlayed: gamesPlayed , teamAvg: teamAvg)
+
                                 }
                                 else if (game["winner"] as! String == "Tie" && self.wins[i] == "W")
                                 {
                                     self.wins[i] = "Tie"
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating - 20
-                                    self.currentUser["rating"] = rating
+                                    self.updateRating("W", gamesPlayed: gamesPlayed , teamAvg: teamAvg)
+
                                 }
                                 else if (game["winner"] as! String == "Tie" && self.wins[i] == "L")
                                 {
                                     self.wins[i] = "Tie"
-                                    var rating = self.currentUser.objectForKey("rating") as! Int
-                                    rating = rating + 20
-                                    self.currentUser["rating"] = rating
+                                    self.updateRating("W", gamesPlayed: gamesPlayed , teamAvg: teamAvg)
                                 }
                             }
                             i++
@@ -197,11 +241,14 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
     }
 
+    // The number of rows in the tableView is equivalent ot the number of games played by the
+    // current user
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return locations.count
     }
     
+    // Update UI elements of each row
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let singleCell: SingleRowCell = tableView.dequeueReusableCellWithIdentifier("cell") as! SingleRowCell
@@ -215,28 +262,26 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         singleCell.lLocation.text = locationTitles[indexPath.row]
         singleCell.lStartTime.text = time
         singleCell.lNumPlayers.text = numPlayers[indexPath.row].description
-        singleCell.lMinRating.text = avgRatings[indexPath.row].description
+        singleCell.lAvgRating.text = avgRatings[indexPath.row].description
         singleCell.lTeam.text   = teams[indexPath.row]
         singleCell.lWL.text     = wins[indexPath.row]
         if (wins[indexPath.row] ==  "W")
         {
             singleCell.lWL.textColor = UIColor.greenColor()
-            print("Green")
         }
         else if (wins[indexPath.row] ==  "L")
         {
             singleCell.lWL.textColor = UIColor.redColor()
-            print("Red")
         }
         else
         {
             singleCell.lWL.textColor = UIColor.orangeColor()
-            print("Orange")
         }
         return singleCell
     }
 
-    
+    // Once a row is clicked, popup a view that allows a player to enter in the result of the
+    // game
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
     {
         team = teams[indexPath.row]
@@ -248,21 +293,21 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
     }
     
+    // Pass data along to the popup view
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?)
     {
         if segue.identifier == "showView"
         {
-            let vc = segue.destinationViewController as! PopUpVC
-            vc.team = team
-            vc.gameId = gameId
-            let controller = vc.popoverPresentationController
+            let popup = segue.destinationViewController as! PopUpVC
+            popup.team = team
+            popup.gameId = gameId
+            let controller = popup.popoverPresentationController
             
             if controller != nil
             {
                 controller?.delegate = self
                 
             }
-            
         }
         
     }
@@ -272,7 +317,9 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         return .None
     }
 
-    func refresh(sender: AnyObject) {
+    // When the tableView is swiped down, refresh the data in the cells
+    func refresh(sender: AnyObject)
+    {
         NSLog("REFRESH")
         self.getGames()
         let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(500 * Double(NSEC_PER_MSEC)))
@@ -281,7 +328,9 @@ class PastGamesTableVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
     }
     
-    func endRefreshing() {
+    // Stop refreshing the data
+    func endRefreshing()
+    {
         refresh.endRefreshing()
     }
 

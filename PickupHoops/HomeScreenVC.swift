@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 
+// This view hold the "PastGamesTableVC" in a container
 class HomeScreenVC: UIViewController
 {
     @IBOutlet weak var nbCurrentUser: UINavigationBar!
@@ -25,7 +26,5 @@ class HomeScreenVC: UIViewController
         lUser.text = currentUser!.objectForKey("first_name") as? String
         nbCurrentUser.topItem?.title = "Past Games"
         nbCurrentUser.titleTextAttributes =  [NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 18)!]
-
-        
     }
 }

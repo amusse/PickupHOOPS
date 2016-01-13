@@ -16,6 +16,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
     var refresh: CarbonSwipeRefresh = CarbonSwipeRefresh()
     var currentUser: PFUser!     // The current user
     
+    // These properties pertain to each game a user plays
     var locations       = [String]()
     var startTimes      = [NSDate]()
     var endTimes        = [NSDate]()
@@ -129,7 +130,7 @@ class GamesTableVC: UIViewController, UITableViewDelegate
         singleCell.lLocation.text = locationTitles[indexPath.row]
         singleCell.lStartTime.text = time
         singleCell.lNumPlayers.text = numPlayers[indexPath.row].description
-        singleCell.lMinRating.text = avgRatings[indexPath.row].description
+        singleCell.lAvgRating.text = avgRatings[indexPath.row].description
         return singleCell
     }
     

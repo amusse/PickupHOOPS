@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 
+// This class creates a new game and stores the data in Parse
 class NewGameVC: UITableViewController, UITextViewDelegate
 {
 
@@ -104,8 +105,12 @@ class NewGameVC: UITableViewController, UITextViewDelegate
         game["winsB"]       = 0
         game["winner"]      = "A"
         game["avg_rating"]  = currentUser!.objectForKey("rating") as! Int
+        game["teamARating"] = currentUser!.objectForKey("rating") as! Int
+        game["teamBRating"] = 0
         
+        currentUser["gamesPlayed"] = (currentUser.objectForKey("gamesPlayed") as! Int) + 1
         
+        currentUser.saveInBackground()
         game.saveInBackground()
         self.dismissViewControllerAnimated(true, completion: nil)
     }

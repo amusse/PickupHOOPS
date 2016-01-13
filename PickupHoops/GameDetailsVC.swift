@@ -54,6 +54,7 @@ class GameDetailsVC: UIViewController
         lEndTime.text       = end
         lNumPlayers.text    = numPlayer
         tvNotes.text        = note
+        
         number = Int(numPlayer)!
         if (number >= 10)
         {
@@ -125,6 +126,10 @@ class GameDetailsVC: UIViewController
                         let total = self.number + 1
                         game["num_players"] = total
                         
+                        let userRating = self.currentUser.objectForKey("rating") as! Int
+                        let gamesPlayed = self.currentUser.objectForKey("gamesPlayed") as! Int
+                        self.currentUser["gamesPlayed"] = gamesPlayed + 1
+                        
                         // Add to the teams
                         let teamA = game["teamA"] as! NSMutableArray
                         let teamB = game["teamB"] as! NSMutableArray
@@ -132,11 +137,13 @@ class GameDetailsVC: UIViewController
                         {
                             teamB.addObject(self.currentUser.username!)
                             game["teamB"] = teamB
+                            game["teamBRating"] = game["teamBRating"] as! Int + userRating
                         }
                         else
                         {
                             teamA.addObject(self.currentUser.username!)
                             game["teamA"] = teamA
+                            game["teamARating"] = game["teamARating"] as! Int + userRating
                         }
                         if (total >= 10)
                         {
@@ -145,7 +152,6 @@ class GameDetailsVC: UIViewController
                         
                         // Increase the average rating
                         let rating = game["avg_rating"] as! Int
-                        let userRating = self.currentUser.objectForKey("rating") as! Int
                         let avgRating = Double(rating + userRating)/Double(total)
                         let newAvg: Int = Int(floor(avgRating))
                         game["avg_rating"] = newAvg
@@ -168,14 +174,4 @@ class GameDetailsVC: UIViewController
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

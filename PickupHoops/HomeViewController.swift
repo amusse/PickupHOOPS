@@ -1,21 +1,27 @@
 //
 //  HomeViewController.swift
-//  Carbon Kit Swift
+//  PickupHoops
 //
-//  Created by Melies Kubrick on 10/12/15.
-//  Copyright (c) 2015 Melies Kubrick. All rights reserved.
+//  Created by Ahmed Musse on 1/5/16.
+//  Copyright © 2016 Pickup Sports. All rights reserved.
 //
 
 import UIKit
 import Parse
 
-class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
+// This class is a navigation controller that depends on the CarbonTabSwipeNavigation class.
+// It controls the movement of view controllers and the tabs
+class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate
+{
 
-    var items = NSArray()
+    var items = NSArray()               // Array of icons in navigation bar
+    var currentUser: PFUser!            // The current user
+
+    // The navigation bar
     var carbonTabSwipeNavigation: CarbonTabSwipeNavigation = CarbonTabSwipeNavigation()
-    var currentUser: PFUser!      // The current user
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         currentUser = PFUser.currentUser()
         self.title = "Pickup Hoops"
@@ -23,7 +29,6 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         carbonTabSwipeNavigation = CarbonTabSwipeNavigation(items: items as [AnyObject], delegate: self)
         carbonTabSwipeNavigation.insertIntoRootViewController(self)
         self.style()
-        
     }
 
     
@@ -36,12 +41,12 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         self.performSegueWithIdentifier("toLogoutVC", sender: self)
     }
     
+    // Styles the navigation bar
     func style()
     {
         self.navigationController!.navigationBar.translucent = false
         self.navigationController!.navigationBar.tintColor = UIColor.blackColor()
         self.navigationController!.navigationBar.barTintColor = UIColor.orangeColor()
-            //UIColor(red: 222/255, green: 112/255, blue: 22/255, alpha: 1)
         self.navigationController!.navigationBar.barStyle = .BlackTranslucent
         self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         carbonTabSwipeNavigation.toolbar.translucent = false
@@ -50,15 +55,16 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         carbonTabSwipeNavigation.carbonSegmentedControl!.setWidth(90, forSegmentAtIndex: 0)
         carbonTabSwipeNavigation.carbonSegmentedControl!.setWidth(90, forSegmentAtIndex: 1)
         carbonTabSwipeNavigation.carbonSegmentedControl!.setWidth(90, forSegmentAtIndex: 2)
-        
         carbonTabSwipeNavigation.setNormalColor(UIColor.blackColor().colorWithAlphaComponent(0.6))
         carbonTabSwipeNavigation.setSelectedColor(UIColor.blackColor(), font: UIFont.boldSystemFontOfSize(14))
 
     }
     
-    func carbonTabSwipeNavigation(carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAtIndex index: UInt) -> UIViewController {
-        
-        switch index {
+    // Switches between views
+    func carbonTabSwipeNavigation(carbonTabSwipeNavigation: CarbonTabSwipeNavigation, viewControllerAtIndex index: UInt) -> UIViewController
+    {
+        switch index
+        {
         case 0:
             return self.storyboard!.instantiateViewControllerWithIdentifier("HomeScreenVC") as! HomeScreenVC
         case 1:
@@ -68,11 +74,30 @@ class HomeViewController: UIViewController, CarbonTabSwipeNavigationDelegate {
         default:
             return self.storyboard!.instantiateViewControllerWithIdentifier("FriendsVC") as! FriendsVC
         }
-        
     }
     
-    func carbonTabSwipeNavigation(carbonTabSwipeNavigation: CarbonTabSwipeNavigation, didMoveAtIndex index: UInt) {
-        NSLog("Did move at index: %ld", index)
+    // Output the current view controller index
+    func carbonTabSwipeNavigation(carbonTabSwipeNavigation: CarbonTabSwipeNavigation, didMoveAtIndex index: UInt)
+    {
+        var screen = ""
+        if (index == 0)
+        {
+            screen = "Past Games Screen"
+        }
+        else if (index == 1)
+        {
+            screen = "Current Games Screen"
+        }
+        else if (index == 2)
+        {
+            screen = "Rating Screen"
+        }
+        else if (index == 3)
+        {
+            screen = "Friends Screen"
+        }
+        
+        print("Did move at index: " + screen)
     }
     
 }

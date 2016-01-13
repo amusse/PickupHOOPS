@@ -14,7 +14,7 @@ class SingleRowCell: UITableViewCell
     @IBOutlet weak var lLocation: UILabel!
     @IBOutlet weak var lStartTime: UILabel!
     @IBOutlet weak var lNumPlayers: UILabel!
-    @IBOutlet weak var lMinRating: UILabel!
+    @IBOutlet weak var lAvgRating: UILabel!
     @IBOutlet weak var lTeam: UILabel!
     @IBOutlet weak var lWL: UILabel!
     

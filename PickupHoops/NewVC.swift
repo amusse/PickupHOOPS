@@ -9,14 +9,13 @@
 import UIKit
 import Parse
 
-
+// This class contains NewGameVC
 class NewVC: UIViewController
 {
 
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
         
     }
 

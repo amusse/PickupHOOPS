@@ -18,7 +18,6 @@
 		E235F0BA1C3131090061BA28 /* CarbonTabSwipeSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E235F0B51C3131090061BA28 /* CarbonTabSwipeSegmentedControl.m */; settings = {ASSET_TAGS = (); }; };
 		E235F0BC1C3131160061BA28 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0BB1C3131160061BA28 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0C11C3131630061BA28 /* GameDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0BE1C3131630061BA28 /* GameDetailsVC.swift */; settings = {ASSET_TAGS = (); }; };
-		E235F0C21C3131630061BA28 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0BF1C3131630061BA28 /* ViewControllerTwo.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0C51C3648C90061BA28 /* GamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0C41C3648C90061BA28 /* GamesVC.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0C71C364AC10061BA28 /* NewGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0C61C364AC10061BA28 /* NewGameVC.swift */; settings = {ASSET_TAGS = (); }; };
 		E235F0C91C3903820061BA28 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E235F0C81C3903820061BA28 /* MapVC.swift */; settings = {ASSET_TAGS = (); }; };
@@ -89,7 +88,6 @@
 		E235F0B51C3131090061BA28 /* CarbonTabSwipeSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarbonTabSwipeSegmentedControl.m; sourceTree = "<group>"; };
 		E235F0BB1C3131160061BA28 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E235F0BE1C3131630061BA28 /* GameDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameDetailsVC.swift; sourceTree = "<group>"; };
-		E235F0BF1C3131630061BA28 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
 		E235F0C41C3648C90061BA28 /* GamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesVC.swift; sourceTree = "<group>"; };
 		E235F0C61C364AC10061BA28 /* NewGameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameVC.swift; sourceTree = "<group>"; };
 		E235F0C81C3903820061BA28 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -177,7 +175,6 @@
 				E235F0A81C3130CA0061BA28 /* PastGamesTableVC.swift */,
 				E267C7341C3C7EA30077E2C3 /* PopUpVC.swift */,
 				E267C7321C3C3E550077E2C3 /* HomeScreenVC.swift */,
-				E235F0BF1C3131630061BA28 /* ViewControllerTwo.swift */,
 				E235F0A21C2FE9F60061BA28 /* RatingVC.swift */,
 				E235F0A41C2FEA1B0061BA28 /* FriendsVC.swift */,
 				E2627B271C3AF97800694C54 /* SingleRowCell.swift */,
@@ -442,7 +439,6 @@
 				E235F0B81C3131090061BA28 /* CarbonTabSwipeNavigation.m in Sources */,
 				E235F0A31C2FE9F60061BA28 /* RatingVC.swift in Sources */,
 				E235F0A91C3130CA0061BA28 /* PastGamesTableVC.swift in Sources */,
-				E235F0C21C3131630061BA28 /* ViewControllerTwo.swift in Sources */,
 				E2D3EFBB1C2DF5A0003D8A38 /* EmailVC.swift in Sources */,
 				E235F0B71C3131090061BA28 /* CarbonSwipeRefresh.m in Sources */,
 				E267C7371C3E0A800077E2C3 /* NewVC.swift in Sources */,
